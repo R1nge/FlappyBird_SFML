@@ -8,11 +8,12 @@ int main()
     float fps = 60;
     float frameTime = static_cast<float>(1) / fps;
     sf::Clock frame_clock;
+    sf::Vector2f direction;
     while (window.isOpen())
     {
         if (frame_clock.getElapsedTime().asMilliseconds() >= frameTime) {
             frame_clock.restart();
-            shape.move(0, 1);
+            shape.move(direction);
         }
 
         sf::Event event;
@@ -22,7 +23,10 @@ int main()
                 window.close();
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-                shape.move(0, -1);
+                direction.y = -1;
+            }
+            else {
+                direction.y = 1;
             }
         }
 
