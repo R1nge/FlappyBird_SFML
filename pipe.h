@@ -10,5 +10,6 @@ public:
 	sf::RectangleShape shape;
 private:
 	sf::RenderWindow* _window;
+	float _width;
 };
 

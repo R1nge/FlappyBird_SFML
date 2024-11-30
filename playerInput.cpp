@@ -2,7 +2,6 @@
 
 void PlayerInput::Process()
 {
-
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) 
     {
         _lastPlayerInput.y = -1;

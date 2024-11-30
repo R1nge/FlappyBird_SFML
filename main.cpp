@@ -11,10 +11,8 @@ int main()
     PlayerInput playerInput;
 
     Pipe pipe(&window, 100, 200, sf::Color::Green);
-    pipe.move(sf::Vector2f(100,0));
-
-    Pipe pipe2(&window, 100, 200, sf::Color::Green);
-    pipe2.move(sf::Vector2f(100, 400));
+    Pipe pipe2(&window, 100, 200, sf::Color::Red);
+    pipe2.move(sf::Vector2f(0, 600));
 
     float fps = 60;
     float frameTime = static_cast<float>(1) / fps;
@@ -24,6 +22,8 @@ int main()
         if (frameClock.getElapsedTime().asMilliseconds() >= frameTime) {
             frameClock.restart();
             player.move(playerInput.GetPlayerInput());
+            pipe.move(sf::Vector2f(-1, 0));
+            pipe2.move(sf::Vector2f(-1, 0));
         }
 
         sf::Event event;
