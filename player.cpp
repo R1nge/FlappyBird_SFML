@@ -1,10 +1,12 @@
 #include "player.h"
+#include "circleCollider.h"
 #include <SFML/Graphics.hpp>
 
 Player::Player(sf::RenderWindow* window, float radius, sf::Color color) {
 	_window = window;
 	shape = sf::CircleShape(radius);
 	shape.setFillColor(color);
+	collider = CircleCollider::CircleCollider(shape);
 }
 
 void Player::move(sf::Vector2f direction)

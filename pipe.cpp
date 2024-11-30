@@ -1,4 +1,5 @@
 #include "pipe.h"
+#include "rectangleCollider.h"
 
 Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
 {
@@ -6,6 +7,7 @@ Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
 	_width = width;
 	shape = sf::RectangleShape(sf::Vector2f(width, height));
 	shape.setFillColor(color);
+	collider = RectangleCollider::RectangleCollider(shape);
 }
 
 void Pipe::move(sf::Vector2f direction)
