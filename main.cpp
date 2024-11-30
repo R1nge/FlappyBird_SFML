@@ -13,6 +13,16 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+            {
+                shape.move(-1.f, 0.f);
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Scan::Right))
+            {
+                shape.move(1.f, 0.f);
+            }
         }
 
         window.clear();
