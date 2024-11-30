@@ -4,7 +4,7 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(720, 1280), "Flappy Bird");
-    Player player(100, sf::Color::Green);
+    Player player(&window, 100, sf::Color::Green);
     float fps = 60;
     float frameTime = static_cast<float>(1) / fps;
     sf::Clock frame_clock;
@@ -13,7 +13,7 @@ int main()
     {
         if (frame_clock.getElapsedTime().asMilliseconds() >= frameTime) {
             frame_clock.restart();
-            player.shape.move(direction);
+            player.move(direction);
         }
 
         sf::Event event;
@@ -31,7 +31,7 @@ int main()
         }
 
         window.clear();
-        window.draw(player.shape);
+        player.draw();
         window.display();
     }
 

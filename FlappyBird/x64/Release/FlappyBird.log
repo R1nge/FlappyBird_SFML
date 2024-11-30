@@ -1,8 +1,8 @@
 ﻿  main.cpp
   player.cpp
   Generating code
-  2 of 7 functions (28.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
+  4 of 10 functions (40.0%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe
