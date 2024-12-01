@@ -22,7 +22,8 @@ int main()
 
 	Pipe pipe(&window, 100, 200, sf::Color::Red);
 	Pipe pipe2(&window, 100, 200, sf::Color::Red);
-	pipe2.move(sf::Vector2f(0, 600));
+	pipe.move(sf::Vector2f(window.getSize().x, 0));
+	pipe2.move(sf::Vector2f(window.getSize().x, 600));
 
 	while (window.isOpen())
 	{
@@ -35,10 +36,10 @@ int main()
 		bool p = pipe.collider.CheckCollision(player.collider.Bbox);
 		bool p2 = pipe2.collider.CheckCollision(player.collider.Bbox);
 		if (player.collider.CheckCollision(pipe.collider.Bbox) || player.collider.CheckCollision(pipe2.collider.Bbox)) {
-			std::cout << "Collision with pipe \n";
+			//std::cout << "Collision with pipe \n";
 		}
 		else {
-			std::cout << "\n";
+			//std::cout << "\n";
 		}
 		sf::Event event;
 		while (window.pollEvent(event))
