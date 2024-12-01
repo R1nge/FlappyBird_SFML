@@ -29,12 +29,13 @@ int main()
 		player.move(playerInput.GetPlayerInput());
 		pipe.move(sf::Vector2f(-1, 0));
 		pipe2.move(sf::Vector2f(-1, 0));
-
-		pipe.collider.Update();
-		pipe2.collider.Update();
-
-		if (player.collider.CheckCollision(player.shape, pipe.collider.Bbox)) {
+		bool p = pipe.collider.CheckCollision(pipe.shape, player.collider.Bbox);
+		bool p2 = pipe2.collider.CheckCollision(pipe2.shape, player.collider.Bbox);
+		if (player.collider.CheckCollision(player.shape, pipe.collider.Bbox) || player.collider.CheckCollision(player.shape, pipe2.collider.Bbox)) {
 			std::cout << "Collision with pipe \n";
+		}
+		else {
+			std::cout << "\n";
 		}
 		sf::Event event;
 		while (window.pollEvent(event))
@@ -46,12 +47,15 @@ int main()
 		}
 
 		window.clear();
-		player.collider.Draw(player.shape,window);
-		pipe.collider.Draw(window);
-		pipe2.collider.Draw(window);
+
 		player.draw();
 		pipe.draw();
 		pipe2.draw();
+
+		player.collider.Draw(player.shape,window);
+		pipe.collider.Draw(pipe.shape,window);
+		pipe2.collider.Draw(pipe2.shape,window);
+		
 		window.display();
 	}
 

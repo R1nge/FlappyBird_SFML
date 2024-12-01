@@ -5,6 +5,7 @@ CircleCollider::CircleCollider() = default;
 void CircleCollider::Draw(sf::CircleShape& shape, sf::RenderWindow& window)
 {
 	shape.setFillColor(sf::Color::Green);
+	Bbox = shape.getGlobalBounds();
 	window.draw(shape);
 }
 

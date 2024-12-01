@@ -7,7 +7,7 @@ Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
 	_width = width;
 	shape = sf::RectangleShape(sf::Vector2f(width, height));
 	shape.setFillColor(color);
-	collider = RectangleCollider::RectangleCollider(shape);
+	collider = RectangleCollider::RectangleCollider();
 }
 
 void Pipe::move(sf::Vector2f direction)

@@ -9,6 +9,3 @@ public:
 	bool CheckCollision(sf::CircleShape& shape, sf::FloatRect otherBbox);
 	sf::FloatRect Bbox;
 };
-
-
-

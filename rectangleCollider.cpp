@@ -3,24 +3,14 @@
 
 RectangleCollider::RectangleCollider() = default;
 
-RectangleCollider::RectangleCollider(sf::RectangleShape shape) {
-	this->shape = shape;
-	Bbox = shape.getLocalBounds();
-}
-
-void RectangleCollider::Update()
-{
-	Bbox = shape.getLocalBounds();
-}
-
-void RectangleCollider::Draw(sf::RenderWindow& window)
+void RectangleCollider::Draw(sf::RectangleShape shape, sf::RenderWindow& window)
 {
 	shape.setFillColor(sf::Color::Green);
+	Bbox = shape.getGlobalBounds();
 	window.draw(shape);
 }
 
-bool RectangleCollider::CheckCollision(sf::FloatRect otherBbox)
+bool RectangleCollider::CheckCollision(sf::RectangleShape shape, sf::FloatRect otherBbox)
 {
-	Bbox = shape.getLocalBounds();
-	return Bbox.intersects(otherBbox);
+	return shape.getGlobalBounds().intersects(otherBbox);
 }

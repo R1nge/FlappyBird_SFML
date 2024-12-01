@@ -1,7 +1,7 @@
 ﻿  main.cpp
   Generating code
-  9 of 43 functions (20.9%) were compiled, the rest were copied from previous compilation.
+  3 of 40 functions ( 7.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe
