@@ -14,7 +14,6 @@ int main()
 	//Randomize pipes positions
 	//States w state machine; enums based
 	//Main menu, in game menu, game over menu
-	//Score system, highscore system
 	//Sounds
 	//Images
 
@@ -32,9 +31,16 @@ int main()
 	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
 	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
 
+	sf::Text text;
+	sf::Font font;
 
-	
-	
+	if (font.loadFromFile("Carre.ttf"))
+	{
+		text.setFont(font);
+		text.setCharacterSize(24);
+		text.setFillColor(sf::Color::White);
+		text.setPosition(sf::Vector2f(window.getSize().x / 2, window.getSize().y / 8));
+	}
 
 	while (window.isOpen())
 	{
@@ -85,7 +91,11 @@ int main()
 			pipe2.draw();
 		}
 
-		std::cout << scoreHandler.getScore() << std::endl;
+		text.setString(std::to_string(scoreHandler.getHighScore()));
+
+		window.draw(text);
+
+		//std::cout << scoreHandler.getHighScore() << std::endl;
 
 
 		//std::ofstream outFile("score.txt");
