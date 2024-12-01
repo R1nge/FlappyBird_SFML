@@ -52,20 +52,28 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 
-			playerInput.Process();
+			playerInput.Process(event);
+
+			if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+				
+				std::cout << "D pressed";
+				_drawColliders = !_drawColliders;
+			}
 		}
 
 		window.clear();
-
-		player.draw();
-		pipe.draw();
-		pipe2.draw();
 
 		if (_drawColliders) 
 		{
 			player.collider.Draw(window);
 			pipe.collider.Draw(window);
 			pipe2.collider.Draw(window);
+		}
+		else 
+		{
+			player.draw();
+			pipe.draw();
+			pipe2.draw();
 		}
 		
 		window.display();

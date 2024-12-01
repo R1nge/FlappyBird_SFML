@@ -12,4 +12,5 @@ public:
 	sf::CircleShape shape;
 private:
 	sf::RenderWindow* _window;
+	sf::Color _originalColor;
 };
