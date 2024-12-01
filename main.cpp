@@ -56,8 +56,8 @@ int main()
 
 			if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 				
-				std::cout << "D pressed";
 				_drawColliders = !_drawColliders;
+				std::cout << "Collider debug is " << _drawColliders << std::endl;
 			}
 		}
 
