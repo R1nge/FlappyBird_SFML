@@ -7,8 +7,7 @@
 int main()
 {
 	bool _drawColliders = false;
-	//DONE:
-	//Collisions https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php#bounding-boxes
+
 	//TODO:
 	//Make two pipes act as one
 	//Randomize pipes positions
@@ -31,16 +30,16 @@ int main()
 
 	while (window.isOpen())
 	{
-		player.move(playerInput.GetPlayerInput());
+		player.move(playerInput.getPlayerInput());
 		player.collider.Update();
 
 		pipe.move(sf::Vector2f(-1, 0));
-		pipe.collider.Update();
+		pipe.collider.update();
 
 		pipe2.move(sf::Vector2f(-1, 0));
-		pipe2.collider.Update();
+		pipe2.collider.update();
 
-		if (player.collider.CheckCollision(pipe.collider.Bbox) || player.collider.CheckCollision(pipe2.collider.Bbox)) {
+		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
 			std::cout << "Collision with pipe \n";
 		}
 		else {
@@ -52,7 +51,7 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 
-			playerInput.Process(event);
+			playerInput.process(event);
 
 			if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 				
@@ -65,9 +64,9 @@ int main()
 
 		if (_drawColliders) 
 		{
-			player.collider.Draw(window);
-			pipe.collider.Draw(window);
-			pipe2.collider.Draw(window);
+			player.collider.draw();
+			pipe.collider.draw();
+			pipe2.collider.draw();
 		}
 		else 
 		{

@@ -5,8 +5,8 @@ class PlayerInput
 {
 public:
 	PlayerInput(sf::Vector2f initialDirection);
-	void Process(sf::Event event);
-	sf::Vector2f GetPlayerInput();
+	void process(sf::Event event);
+	sf::Vector2f getPlayerInput();
 private:
 	sf::Vector2f _lastPlayerInput;
 };

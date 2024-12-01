@@ -8,7 +8,7 @@ Player::Player(sf::RenderWindow* window, float radius, sf::Color color) {
 	shape.setFillColor(color);
 	_originalColor = color;
 	//shape.setOrigin(sf::Vector2f(radius / 2, radius / 2));
-	collider = CircleCollider::CircleCollider(shape);
+	collider = CircleCollider::CircleCollider(shape, *window);
 }
 
 void Player::move(sf::Vector2f direction)

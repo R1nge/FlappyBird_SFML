@@ -5,7 +5,7 @@ PlayerInput::PlayerInput(sf::Vector2f initialDirection)
     _lastPlayerInput = initialDirection;
 }
 
-void PlayerInput::Process(sf::Event event)
+void PlayerInput::process(sf::Event event)
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
     {
@@ -17,7 +17,7 @@ void PlayerInput::Process(sf::Event event)
     }
 }
 
-sf::Vector2f PlayerInput::GetPlayerInput()
+sf::Vector2f PlayerInput::getPlayerInput()
 {
     return _lastPlayerInput;
 }

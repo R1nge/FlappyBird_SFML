@@ -1,4 +1,5 @@
-﻿  main.cpp
+﻿  rectangleCollider.cpp
+  main.cpp
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(29,41): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(29,41): warning C4244:         with
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(29,41): warning C4244:         [
@@ -17,9 +18,10 @@ C:\Users\R1nge\source\repos\FlappyBird\main.cpp(30,42): warning C4244:         a
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(30,42): warning C4244:         [
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(30,42): warning C4244:             T=float
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(30,42): warning C4244:         ]
+  pipe.cpp
   Generating code
-  5 of 45 functions (11.1%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+  20 of 45 functions (44.4%) were compiled, the rest were copied from previous compilation.
+    8 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

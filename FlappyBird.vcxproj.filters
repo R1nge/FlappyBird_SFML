@@ -13,42 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Colliders">
+      <UniqueIdentifier>{d4d8ba4a-78d8-4c20-8d72-942c644b17c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{448454f9-6d3d-49a6-9725-5fcde7b365bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Colliders">
+      <UniqueIdentifier>{dbd06a23-ac05-409e-b0f6-6164eb83fbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{be051f93-53ee-4dea-8092-d6b32af5eca8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="playerInput.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pipe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rectangleCollider.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="playerInput.cpp">
+      <Filter>Source Files\Player</Filter>
     </ClCompile>
     <ClCompile Include="circleCollider.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="rectangleCollider.cpp">
+      <Filter>Source Files\Colliders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="playerInput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="pipe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rectangleCollider.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="circleCollider.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangleCollider.h">
+      <Filter>Header Files\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="playerInput.h">
+      <Filter>Header Files\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
