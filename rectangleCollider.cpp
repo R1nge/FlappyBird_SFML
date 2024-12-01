@@ -11,9 +11,11 @@ RectangleCollider::RectangleCollider(sf::RectangleShape& shape, sf::RenderWindow
 
 void RectangleCollider::draw()
 {
-	_shape->setFillColor(sf::Color::Green);
 	Bbox = _shape->getGlobalBounds();
-	_window->draw(*_shape);
+	sf::RectangleShape rect = sf::RectangleShape(Bbox.getSize());
+	rect.setFillColor(sf::Color::Green);
+	rect.setPosition(Bbox.getPosition());
+	_window->draw(rect);
 }
 
 void RectangleCollider::update()

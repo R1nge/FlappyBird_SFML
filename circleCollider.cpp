@@ -11,10 +11,9 @@ CircleCollider::CircleCollider(sf::CircleShape& shape, sf::RenderWindow& window)
 void CircleCollider::draw()
 {
 	Bbox = _shape->getGlobalBounds();
-	sf::RectangleShape rect = sf::RectangleShape(_shape->getGlobalBounds().getSize());
+	sf::RectangleShape rect = sf::RectangleShape(Bbox.getSize());
 	rect.setFillColor(sf::Color::Green);
-	//rect.setOrigin(sf::Vector2f(rect.getPosition().x / 2, rect.getPosition().y / 2));
-	rect.setPosition(_shape->getPosition());
+	rect.setPosition(Bbox.getPosition());
 	_window->draw(rect);
 }
 

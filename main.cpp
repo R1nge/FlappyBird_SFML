@@ -20,7 +20,7 @@ int main()
 	ScoreHandler scoreHandler = ScoreHandler();
 
 	sf::RenderWindow window(sf::VideoMode(720, 1280), "Flappy Bird");
-	window.setFramerateLimit(60);
+	window.setVerticalSyncEnabled(true);
 	window.setKeyRepeatEnabled(false);
 
 	sf::Texture playerSprite;
