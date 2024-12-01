@@ -30,11 +30,10 @@ int main()
 		pipe.move(sf::Vector2f(-1, 0));
 		pipe2.move(sf::Vector2f(-1, 0));
 
-		player.collider.Update();
 		pipe.collider.Update();
 		pipe2.collider.Update();
 
-		if (player.collider.CheckCollision(pipe.collider.Bbox)) {
+		if (player.collider.CheckCollision(player.shape, pipe.collider.Bbox)) {
 			std::cout << "Collision with pipe \n";
 		}
 		sf::Event event;
@@ -47,7 +46,7 @@ int main()
 		}
 
 		window.clear();
-		player.collider.Draw(window);
+		player.collider.Draw(player.shape,window);
 		pipe.collider.Draw(window);
 		pipe2.collider.Draw(window);
 		player.draw();

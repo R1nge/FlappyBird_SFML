@@ -2,22 +2,13 @@
 
 CircleCollider::CircleCollider() = default;
 
-CircleCollider::CircleCollider(sf::CircleShape shape) {
-	this->shape = shape;
-	Bbox = shape.getGlobalBounds();
-}
-
-void CircleCollider::Update()
+void CircleCollider::Draw(sf::CircleShape& shape, sf::RenderWindow& window)
 {
-	Bbox = shape.getGlobalBounds();
-}
-
-void CircleCollider::Draw(sf::RenderWindow& window)
-{
+	shape.setFillColor(sf::Color::Green);
 	window.draw(shape);
 }
 
-bool CircleCollider::CheckCollision(sf::FloatRect otherBbox)
+bool CircleCollider::CheckCollision(sf::CircleShape& circleShape, sf::FloatRect otherBbox)
 {
-	return Bbox.intersects(otherBbox);
+	return circleShape.getGlobalBounds().intersects(otherBbox);
 }
