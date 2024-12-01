@@ -41,7 +41,7 @@ int main()
 		pipe2.collider.Update();
 
 		if (player.collider.CheckCollision(pipe.collider.Bbox) || player.collider.CheckCollision(pipe2.collider.Bbox)) {
-			//std::cout << "Collision with pipe \n";
+			std::cout << "Collision with pipe \n";
 		}
 		else {
 			//std::cout << "\n";
