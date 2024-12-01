@@ -5,6 +5,7 @@
 class Pipe
 {
 public:
+	Pipe();
 	Pipe(sf::RenderWindow* window, float width, float height, sf::Color color);
 	void move(sf::Vector2f direction);
 	void draw();
@@ -14,4 +15,3 @@ private:
 	sf::RenderWindow* _window;
 	float _width;
 };
-

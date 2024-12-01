@@ -5,8 +5,11 @@ class RectangleCollider
 {
 public:
 	RectangleCollider();
-	void Draw(sf::RectangleShape& shape, sf::RenderWindow& window);
-	void Update(sf::RectangleShape& shape);
+	RectangleCollider(sf::RectangleShape& shape);
+	void Draw(sf::RenderWindow& window);
+	void Update();
 	bool CheckCollision(sf::FloatRect otherBbox);
 	sf::FloatRect Bbox;
+private:
+	sf::RectangleShape* _shape;
 };

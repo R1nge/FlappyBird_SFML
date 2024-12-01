@@ -2,16 +2,21 @@
 
 CircleCollider::CircleCollider() = default;
 
-void CircleCollider::Draw(sf::CircleShape& shape, sf::RenderWindow& window)
+CircleCollider::CircleCollider(sf::CircleShape& shape)
 {
-	shape.setFillColor(sf::Color::Green);
-	Bbox = shape.getGlobalBounds();
-	window.draw(shape);
+	_shape = &shape;
 }
 
-void CircleCollider::Update(sf::CircleShape& shape)
+void CircleCollider::Draw(sf::RenderWindow& window)
 {
-	Bbox = shape.getGlobalBounds();
+	_shape->setFillColor(sf::Color::Green);
+	Bbox = _shape->getGlobalBounds();
+	window.draw(*_shape);
+}
+
+void CircleCollider::Update()
+{
+	Bbox = _shape->getGlobalBounds();
 }
 
 bool CircleCollider::CheckCollision(sf::FloatRect otherBbox)

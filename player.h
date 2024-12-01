@@ -13,4 +13,3 @@ public:
 private:
 	sf::RenderWindow* _window;
 };
-

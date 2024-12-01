@@ -5,8 +5,11 @@ class CircleCollider
 {
 public:
 	CircleCollider();
-	void Draw(sf::CircleShape& shape, sf::RenderWindow& window);
-	void Update(sf::CircleShape& shape);
+	CircleCollider(sf::CircleShape& shape);
+	void Draw(sf::RenderWindow& window);
+	void Update();
 	bool CheckCollision(sf::FloatRect otherBbox);
 	sf::FloatRect Bbox;
+private:
+	sf::CircleShape* _shape;
 };

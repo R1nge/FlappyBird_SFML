@@ -6,8 +6,12 @@
 
 int main()
 {
-	//TODO:
+	bool _drawColliders = false;
+	//DONE:
 	//Collisions https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php#bounding-boxes
+	//TODO:
+	//Make two pipes act as one
+	//Randomize pipes positions
 	//States w state machine; enums based
 	//Main menu, in game menu, game over menu
 	//Score system, highscore system
@@ -28,13 +32,14 @@ int main()
 	while (window.isOpen())
 	{
 		player.move(playerInput.GetPlayerInput());
-		player.collider.Update(player.shape);
+		player.collider.Update();
+
 		pipe.move(sf::Vector2f(-1, 0));
-		pipe.collider.Update(pipe.shape);
+		pipe.collider.Update();
+
 		pipe2.move(sf::Vector2f(-1, 0));
-		pipe2.collider.Update(pipe2.shape);
-		bool p = pipe.collider.CheckCollision(player.collider.Bbox);
-		bool p2 = pipe2.collider.CheckCollision(player.collider.Bbox);
+		pipe2.collider.Update();
+
 		if (player.collider.CheckCollision(pipe.collider.Bbox) || player.collider.CheckCollision(pipe2.collider.Bbox)) {
 			//std::cout << "Collision with pipe \n";
 		}
@@ -56,9 +61,12 @@ int main()
 		pipe.draw();
 		pipe2.draw();
 
-		//player.collider.Draw(player.shape,window);
-		//pipe.collider.Draw(pipe.shape,window);
-		//pipe2.collider.Draw(pipe2.shape,window);
+		if (_drawColliders) 
+		{
+			player.collider.Draw(window);
+			pipe.collider.Draw(window);
+			pipe2.collider.Draw(window);
+		}
 		
 		window.display();
 	}
