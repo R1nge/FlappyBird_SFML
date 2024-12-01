@@ -9,7 +9,12 @@ void CircleCollider::Draw(sf::CircleShape& shape, sf::RenderWindow& window)
 	window.draw(shape);
 }
 
-bool CircleCollider::CheckCollision(sf::CircleShape& circleShape, sf::FloatRect otherBbox)
+void CircleCollider::Update(sf::CircleShape& shape)
 {
-	return circleShape.getGlobalBounds().intersects(otherBbox);
+	Bbox = shape.getGlobalBounds();
+}
+
+bool CircleCollider::CheckCollision(sf::FloatRect otherBbox)
+{
+	return Bbox.intersects(otherBbox);
 }

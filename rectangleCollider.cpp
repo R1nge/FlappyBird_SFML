@@ -3,14 +3,19 @@
 
 RectangleCollider::RectangleCollider() = default;
 
-void RectangleCollider::Draw(sf::RectangleShape shape, sf::RenderWindow& window)
+void RectangleCollider::Draw(sf::RectangleShape& shape, sf::RenderWindow& window)
 {
 	shape.setFillColor(sf::Color::Green);
 	Bbox = shape.getGlobalBounds();
 	window.draw(shape);
 }
 
-bool RectangleCollider::CheckCollision(sf::RectangleShape shape, sf::FloatRect otherBbox)
+void RectangleCollider::Update(sf::RectangleShape& shape)
 {
-	return shape.getGlobalBounds().intersects(otherBbox);
+	Bbox = shape.getGlobalBounds();
+}
+
+bool RectangleCollider::CheckCollision(sf::FloatRect otherBbox)
+{
+	return Bbox.intersects(otherBbox);
 }

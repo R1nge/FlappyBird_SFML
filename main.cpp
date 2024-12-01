@@ -27,11 +27,14 @@ int main()
 	while (window.isOpen())
 	{
 		player.move(playerInput.GetPlayerInput());
+		player.collider.Update(player.shape);
 		pipe.move(sf::Vector2f(-1, 0));
+		pipe.collider.Update(pipe.shape);
 		pipe2.move(sf::Vector2f(-1, 0));
-		bool p = pipe.collider.CheckCollision(pipe.shape, player.collider.Bbox);
-		bool p2 = pipe2.collider.CheckCollision(pipe2.shape, player.collider.Bbox);
-		if (player.collider.CheckCollision(player.shape, pipe.collider.Bbox) || player.collider.CheckCollision(player.shape, pipe2.collider.Bbox)) {
+		pipe2.collider.Update(pipe2.shape);
+		bool p = pipe.collider.CheckCollision(player.collider.Bbox);
+		bool p2 = pipe2.collider.CheckCollision(player.collider.Bbox);
+		if (player.collider.CheckCollision(pipe.collider.Bbox) || player.collider.CheckCollision(pipe2.collider.Bbox)) {
 			std::cout << "Collision with pipe \n";
 		}
 		else {
@@ -52,9 +55,9 @@ int main()
 		pipe.draw();
 		pipe2.draw();
 
-		player.collider.Draw(player.shape,window);
-		pipe.collider.Draw(pipe.shape,window);
-		pipe2.collider.Draw(pipe2.shape,window);
+		//player.collider.Draw(player.shape,window);
+		//pipe.collider.Draw(pipe.shape,window);
+		//pipe2.collider.Draw(pipe2.shape,window);
 		
 		window.display();
 	}
