@@ -23,8 +23,12 @@ int main()
 	window.setFramerateLimit(60);
 	window.setKeyRepeatEnabled(false);
 
-	Player player(&window, 100, sf::Color::Yellow);
+	sf::Texture playerSprite;
+	playerSprite.loadFromFile("Bird.png");
+
+	Player player(&window, 100, playerSprite);
 	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
+	
 
 	Pipe pipe(&window, 100, 200, sf::Color::Red);
 	Pipe pipe2(&window, 100, 200, sf::Color::Red);
@@ -56,10 +60,9 @@ int main()
 		pipe2.collider.update();
 
 		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
-			std::cout << "Collision with pipe \n";
 		}
 		else {
-			//std::cout << "\n";
+			
 		}
 		sf::Event event;
 		while (window.pollEvent(event))

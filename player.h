@@ -5,7 +5,7 @@
 class Player
 {
 public:
-	Player(sf::RenderWindow* window, float raduis, sf::Color color);
+	Player(sf::RenderWindow* window, float raduis, sf::Texture& texture);
 	void move(sf::Vector2f direction);
 	void draw();
 	CircleCollider collider;
