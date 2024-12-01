@@ -45,6 +45,9 @@
     <ClCompile Include="rectangleCollider.cpp">
       <Filter>Source Files\Colliders</Filter>
     </ClCompile>
+    <ClCompile Include="scoreHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pipe.h">
@@ -61,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="playerInput.h">
       <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="scoreHandler.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

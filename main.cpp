@@ -1,6 +1,7 @@
 #include "pipe.h"
 #include "player.h"
 #include "playerInput.h"
+#include"scoreHandler.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
@@ -17,6 +18,8 @@ int main()
 	//Sounds
 	//Images
 
+	ScoreHandler scoreHandler = ScoreHandler();
+
 	sf::RenderWindow window(sf::VideoMode(720, 1280), "Flappy Bird");
 	window.setFramerateLimit(60);
 	window.setKeyRepeatEnabled(false);
@@ -26,8 +29,10 @@ int main()
 
 	Pipe pipe(&window, 100, 200, sf::Color::Red);
 	Pipe pipe2(&window, 100, 200, sf::Color::Red);
-	pipe.move(sf::Vector2f(window.getSize().x, 0));
-	pipe2.move(sf::Vector2f(window.getSize().x, 600));
+	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
+	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
+
+	
 
 	while (window.isOpen())
 	{
@@ -36,10 +41,10 @@ int main()
 		player.move(playerInput.getPlayerInput());
 		player.collider.Update();
 
-		pipe.move(sf::Vector2f(-1, 0));
+		pipe.move(sf::Vector2f(-1, 0), scoreHandler);
 		pipe.collider.update();
 
-		pipe2.move(sf::Vector2f(-1, 0));
+		pipe2.move(sf::Vector2f(-1, 0), scoreHandler);
 		pipe2.collider.update();
 
 		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
@@ -77,6 +82,8 @@ int main()
 			pipe.draw();
 			pipe2.draw();
 		}
+
+		std::cout << scoreHandler.getScore() << std::endl;
 		
 		window.display();
 	}

@@ -1,4 +1,5 @@
 #include "pipe.h"
+#include "scoreHandler.h"
 #include "rectangleCollider.h"
 
 Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
@@ -11,11 +12,12 @@ Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
 	collider = RectangleCollider::RectangleCollider(shape, *window);
 }
 
-void Pipe::move(sf::Vector2f direction)
+void Pipe::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
 {
 	if (shape.getPosition().x <= -_width) 
 	{
 		shape.setPosition(sf::Vector2f(800, shape.getPosition().y));
+		scoreHandler.addScore(1);
 	}
 	else 
 	{

@@ -151,6 +151,7 @@
     <ClCompile Include="pipe.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="playerInput.cpp" />
+    <ClCompile Include="scoreHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circleCollider.h" />
@@ -158,6 +159,7 @@
     <ClInclude Include="pipe.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="playerInput.h" />
+    <ClInclude Include="scoreHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
