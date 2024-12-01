@@ -18,7 +18,7 @@ int main()
 	window.setFramerateLimit(60);
 
 	Player player(&window, 100, sf::Color::Yellow);
-	PlayerInput playerInput;
+	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1));
 
 	Pipe pipe(&window, 100, 200, sf::Color::Red);
 	Pipe pipe2(&window, 100, 200, sf::Color::Red);

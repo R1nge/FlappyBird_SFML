@@ -1,5 +1,10 @@
 #include "playerInput.h"
 
+PlayerInput::PlayerInput(sf::Vector2f initialDirection)
+{
+    _lastPlayerInput = initialDirection;
+}
+
 void PlayerInput::Process()
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) 

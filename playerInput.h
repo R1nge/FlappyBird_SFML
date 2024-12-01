@@ -4,6 +4,7 @@
 class PlayerInput
 {
 public:
+	PlayerInput(sf::Vector2f initialDirection);
 	void Process();
 	sf::Vector2f GetPlayerInput();
 private:
