@@ -19,9 +19,10 @@ int main()
 
 	sf::RenderWindow window(sf::VideoMode(720, 1280), "Flappy Bird");
 	window.setFramerateLimit(60);
+	window.setKeyRepeatEnabled(false);
 
 	Player player(&window, 100, sf::Color::Yellow);
-	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1));
+	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
 
 	Pipe pipe(&window, 100, 200, sf::Color::Red);
 	Pipe pipe2(&window, 100, 200, sf::Color::Red);
@@ -30,6 +31,8 @@ int main()
 
 	while (window.isOpen())
 	{
+		playerInput.update();
+
 		player.move(playerInput.getPlayerInput());
 		player.collider.Update();
 

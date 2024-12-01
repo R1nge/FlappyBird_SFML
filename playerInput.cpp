@@ -1,19 +1,33 @@
 #include "playerInput.h"
 
-PlayerInput::PlayerInput(sf::Vector2f initialDirection)
+PlayerInput::PlayerInput(sf::Vector2f initialDirection, float cooldown)
 {
     _lastPlayerInput = initialDirection;
+    _inputCooldown = sf::Clock();
+    _cooldown = cooldown;
 }
 
 void PlayerInput::process(sf::Event event)
 {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    if (event.type == sf::Event::KeyPressed)
     {
-        _lastPlayerInput.y = -1;
+        if (event.key.code == sf::Keyboard::Space) 
+        {
+            if (_canSendInput) 
+            {
+                _inputCooldown.restart();
+                _lastPlayerInput.y = -1;
+                _canSendInput = false;
+            }
+        }
     }
-    else 
+}
+
+void PlayerInput::update() {
+    if (_inputCooldown.getElapsedTime().asMilliseconds() >= _cooldown)
     {
         _lastPlayerInput.y = 1;
+        _canSendInput = true;
     }
 }
 
