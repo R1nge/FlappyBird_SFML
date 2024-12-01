@@ -6,7 +6,7 @@
 class Pipe
 {
 public:
-	Pipe(sf::RenderWindow* window, float width, float height, sf::Color color);
+	Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite);
 	void move(sf::Vector2f direction, ScoreHandler& scoreHandler);
 	void draw();
 	sf::RectangleShape shape;

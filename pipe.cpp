@@ -2,13 +2,13 @@
 #include "scoreHandler.h"
 #include "rectangleCollider.h"
 
-Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Color color)
+Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite)
 {
 	_window = window;
 	_width = width;
 	shape = sf::RectangleShape(sf::Vector2f(width, height));
-	_originalColor = color;
-	shape.setFillColor(color);
+	_originalColor = shape.getFillColor();;
+	shape.setTexture(&sprite);;
 	collider = RectangleCollider::RectangleCollider(shape, *window);
 }
 
