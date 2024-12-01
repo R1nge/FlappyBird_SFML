@@ -2,6 +2,8 @@
 #include "scoreHandler.h"
 #include "rectangleCollider.h"
 
+Pipe::Pipe() = default;
+
 Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite)
 {
 	_window = window;

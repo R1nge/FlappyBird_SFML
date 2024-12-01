@@ -2,6 +2,7 @@
 #include "player.h"
 #include "playerInput.h"
 #include"scoreHandler.h"
+#include"pipeEntity.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
@@ -12,10 +13,9 @@ int main()
 	//TODO:
 	//Make two pipes act as one
 	//Randomize pipes positions
+	//Sounds
 	//States w state machine; enums based
 	//Main menu, in game menu, game over menu
-	//Sounds
-	//Images
 
 	ScoreHandler scoreHandler = ScoreHandler();
 
@@ -37,8 +37,14 @@ int main()
 	pipe.shape.rotate(180);
 	Pipe pipe2(&window, 100, 200, pipeSprite);
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
+
+
 	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
 	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
+
+	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2);
+
+
 
 	sf::Texture backgroundSprite;
 	backgroundSprite.loadFromFile("Background.png");
@@ -63,11 +69,7 @@ int main()
 		player.move(playerInput.getPlayerInput());
 		player.collider.Update();
 
-		pipe.move(sf::Vector2f(-1, 0), scoreHandler);
-		pipe.collider.update();
-
-		pipe2.move(sf::Vector2f(-1, 0), scoreHandler);
-		pipe2.collider.update();
+		pipeEntity.move(sf::Vector2f(-1,0), scoreHandler);
 
 		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
 			std::cout << "Collision \n" << std::endl;

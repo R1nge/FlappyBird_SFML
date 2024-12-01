@@ -48,6 +48,9 @@
     <ClCompile Include="scoreHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pipeEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pipe.h">
@@ -66,6 +69,9 @@
       <Filter>Header Files\Player</Filter>
     </ClInclude>
     <ClInclude Include="scoreHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pipeEntity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

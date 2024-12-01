@@ -1,61 +1,62 @@
 ﻿  main.cpp
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(40,41): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(41,42): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,107): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(45,87): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,76): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\main.cpp(56,52): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(42,41): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(43,42): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,107): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(51,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         ]
+  pipeEntity.cpp
   Generating code
-  1 of 124 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+  7 of 127 functions ( 5.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe
