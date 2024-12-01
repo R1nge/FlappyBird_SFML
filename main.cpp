@@ -20,7 +20,7 @@ int main()
 	ScoreHandler scoreHandler = ScoreHandler();
 
 	sf::RenderWindow window(sf::VideoMode(720, 1280), "Flappy Bird");
-	window.setVerticalSyncEnabled(true);
+	window.setFramerateLimit(60);
 	window.setKeyRepeatEnabled(false);
 
 	sf::Texture playerSprite;
@@ -39,6 +39,11 @@ int main()
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
 	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
+
+	sf::Texture backgroundSprite;
+	backgroundSprite.loadFromFile("Background.png");
+	sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(window.getSize().x, window.getSize().y));
+	backgroundShape.setTexture(&backgroundSprite);
 
 	sf::Text text;
 	sf::Font font;
@@ -86,6 +91,8 @@ int main()
 		}
 
 		window.clear();
+
+		window.draw(backgroundShape);
 
 		if (_drawColliders) 
 		{
