@@ -12,6 +12,11 @@ void CircleCollider::Update()
 	Bbox = shape.getGlobalBounds();
 }
 
+void CircleCollider::Draw(sf::RenderWindow& window)
+{
+	window.draw(shape);
+}
+
 bool CircleCollider::CheckCollision(sf::FloatRect otherBbox)
 {
 	return Bbox.intersects(otherBbox);
