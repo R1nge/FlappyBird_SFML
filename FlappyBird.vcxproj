@@ -161,6 +161,9 @@
     <ClInclude Include="playerInput.h" />
     <ClInclude Include="scoreHandler.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="score.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

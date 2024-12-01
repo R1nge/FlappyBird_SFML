@@ -18,8 +18,8 @@ C:\Users\R1nge\source\repos\FlappyBird\main.cpp(33,42): warning C4244:         [
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(33,42): warning C4244:             T=float
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp(33,42): warning C4244:         ]
   Generating code
-  4 of 48 functions ( 8.3%) were compiled, the rest were copied from previous compilation.
-    3 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+  41 of 182 functions (22.5%) were compiled, the rest were copied from previous compilation.
+    7 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

@@ -32,6 +32,8 @@ int main()
 	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
 	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
 
+
+	
 	
 
 	while (window.isOpen())
@@ -84,6 +86,16 @@ int main()
 		}
 
 		std::cout << scoreHandler.getScore() << std::endl;
+
+
+		//std::ofstream outFile("score.txt");
+		//outFile << scoreHandler.getScore();
+		//outFile.close();
+
+		//std::ifstream inFile("score.txt");
+		//inFile >> scoreHandler;
+		//inFile.close();
+		//std::cout << scoreHandler.getScore();
 		
 		window.display();
 	}

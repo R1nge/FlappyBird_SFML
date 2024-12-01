@@ -11,3 +11,15 @@ int ScoreHandler::getScore()
 {
 	return _score;
 }
+
+std::istream& operator>>(std::istream& in, ScoreHandler& obj)
+{
+	in >> obj._score;
+	return in;
+}
+
+std::ostream& operator<<(std::ostream& out, const ScoreHandler& obj)
+{
+	out << obj._score << std::endl;
+	return out;
+}
