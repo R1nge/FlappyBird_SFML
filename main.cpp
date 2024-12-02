@@ -42,7 +42,8 @@ int main()
 	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
 	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
 
-	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2);
+	sf::Transformable PipeTransform = sf::Transformable::Transformable();
+	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform);
 
 
 

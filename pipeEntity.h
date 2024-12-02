@@ -4,11 +4,10 @@
 class PipeEntity
 {
 public:
-	PipeEntity();
-	PipeEntity(Pipe& pipeTop, Pipe& pipeBottom);
+	PipeEntity(Pipe& pipeTop, Pipe& pipeBottom, sf::Transformable& transform);
 	void move(sf::Vector2f direction, ScoreHandler& scoreHandler);
 private:
-	Pipe* _top;
-	Pipe* _bottom;
+	Pipe& _top;
+	Pipe& _bottom;
+	sf::Transformable& _transform;
 };
-

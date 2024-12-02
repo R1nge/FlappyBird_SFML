@@ -1,18 +1,24 @@
 #include "pipeEntity.h"
 #include "scoreHandler.h"
 
-PipeEntity::PipeEntity() = default;
-
-PipeEntity::PipeEntity(Pipe& pipeTop, Pipe& pipeBottom)
+PipeEntity::PipeEntity(Pipe& pipeTop, Pipe& pipeBottom, sf::Transformable& transform) : _top(pipeTop), _bottom(pipeBottom), _transform(transform)
 {
-	_top = &pipeTop;
-	_bottom = &pipeBottom;
+	_top = pipeTop;
+	_bottom = pipeBottom;
+	_transform = transform;
 }
 
 void PipeEntity::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
 {
-	_top->move(direction, scoreHandler);
-	_top->collider.update();
-	_bottom->move(direction, scoreHandler);
-	_bottom->collider.update();
+	if (_transform.getPosition().x <= 0) {
+		_transform.setPosition(sf::Vector2f(800, 0));
+	}
+	else {
+		_transform.move(direction);
+	}
+	
+	_top.collider.update();
+	_top.draw();
+	_bottom.collider.update();
+	_bottom.draw();
 }
