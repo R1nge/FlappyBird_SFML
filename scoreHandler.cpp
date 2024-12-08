@@ -6,6 +6,8 @@ void ScoreHandler::addScore(int amount)
 	assert(("Score to add must be > 0", amount > 0));
 	_score += amount;
 
+	std::cout << "Score " << _score << std::endl;
+
 	if (_score > _highScore) {
 		_highScore = _score;
 	}

@@ -14,12 +14,11 @@ Pipe::Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& spr
 	collider = RectangleCollider::RectangleCollider(shape, *window);
 }
 
-void Pipe::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
+void Pipe::move(sf::Vector2f direction)
 {
 	if (shape.getPosition().x <= -_width) 
 	{
 		shape.setPosition(sf::Vector2f(800, shape.getPosition().y));
-		scoreHandler.addScore(1);
 	}
 	else 
 	{
@@ -27,8 +26,8 @@ void Pipe::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
 	}
 }
 
-void Pipe::draw()
+void Pipe::draw(sf::Transformable& parent)
 {
 	shape.setFillColor(_originalColor);
-	_window->draw(shape);
+	_window->draw(shape, parent.getTransform());
 }

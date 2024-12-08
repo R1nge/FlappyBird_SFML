@@ -1,8 +1,22 @@
-﻿  circleCollider.cpp
-  rectangleCollider.cpp
+﻿  pipeEntity.cpp
   main.cpp
-  pipe.cpp
-  player.cpp
-  playerInput.cpp
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,76): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\main.cpp(62,52): warning C4244:         ]
   Generating Code...
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Debug\FlappyBird.exe

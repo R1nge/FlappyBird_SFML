@@ -39,18 +39,17 @@ int main()
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 
 
-	pipe.move(sf::Vector2f(window.getSize().x, 0), scoreHandler);
-	pipe2.move(sf::Vector2f(window.getSize().x, 600), scoreHandler);
+	pipe.move(sf::Vector2f(0, 0));
+	pipe2.move(sf::Vector2f(0, 600));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
 	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform);
 
 
-
-	sf::Texture backgroundSprite;
-	backgroundSprite.loadFromFile("Background.png");
-	sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(window.getSize().x, window.getSize().y));
-	backgroundShape.setTexture(&backgroundSprite);
+	//sf::Texture backgroundSprite;
+	//backgroundSprite.loadFromFile("Background.png");
+	//sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(window.getSize().x, window.getSize().y));
+	//backgroundShape.setTexture(&backgroundSprite);
 
 	sf::Text text;
 	sf::Font font;
@@ -65,6 +64,8 @@ int main()
 
 	while (window.isOpen())
 	{
+		
+
 		playerInput.update();
 
 		player.move(playerInput.getPlayerInput());
@@ -95,7 +96,7 @@ int main()
 
 		window.clear();
 
-		window.draw(backgroundShape);
+		//window.draw(backgroundShape);
 
 		if (_drawColliders) 
 		{
@@ -106,8 +107,8 @@ int main()
 		else 
 		{
 			player.draw();
-			pipe.draw();
-			pipe2.draw();
+			pipe.draw(PipeTransform);
+			pipe2.draw(PipeTransform);
 		}
 
 		text.setString(std::to_string(scoreHandler.getHighScore()));
