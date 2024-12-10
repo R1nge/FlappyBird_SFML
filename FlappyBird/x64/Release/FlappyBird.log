@@ -1,8 +1,12 @@
-﻿  pipe.cpp
-  pipeEntity.cpp
+﻿  pipeEntity.cpp
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp(20,44): warning C4244: 'argument': conversion from 'int32_t' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp(20,44): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp(20,44): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp(20,44): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp(20,44): warning C4244:         ]
   Generating code
-  3 of 127 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+  6 of 147 functions ( 4.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

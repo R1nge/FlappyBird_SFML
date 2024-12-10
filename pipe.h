@@ -7,7 +7,7 @@ class Pipe
 {
 public:
 	Pipe();
-	Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite);
+	Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite, sf::Vector2f startPosition);
 	void move(sf::Vector2f direction);
 	void draw(sf::Transformable& parent);
 	sf::RectangleShape shape;
@@ -16,4 +16,5 @@ private:
 	sf::RenderWindow* _window;
 	sf::Color _originalColor;
 	float _width;
+	sf::Vector2f _startPosition;
 };

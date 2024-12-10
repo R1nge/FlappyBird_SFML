@@ -11,7 +11,6 @@ int main()
 	bool _drawColliders = false;
 
 	//TODO:
-	//Make two pipes act as one
 	//Randomize pipes positions
 	//Sounds
 	//States w state machine; enums based
@@ -32,15 +31,11 @@ int main()
 	sf::Texture pipeSprite;
 	pipeSprite.loadFromFile("Pipe.png");
 
-	Pipe pipe(&window, 100, 200, pipeSprite);
+	Pipe pipe(&window, 100, 200, pipeSprite, sf::Vector2f(0,0));
 	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
 	pipe.shape.rotate(180);
-	Pipe pipe2(&window, 100, 200, pipeSprite);
+	Pipe pipe2(&window, 100, 200, pipeSprite, sf::Vector2f(0, 600));
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
-
-
-	pipe.move(sf::Vector2f(0, 0));
-	pipe2.move(sf::Vector2f(0, 600));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
 	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform);
