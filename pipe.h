@@ -8,8 +8,8 @@ class Pipe
 public:
 	Pipe();
 	Pipe(sf::RenderWindow* window, float width, float height, sf::Texture& sprite);
-	void move(sf::Vector2f direction, ScoreHandler& scoreHandler);
-	void draw();
+	void move(sf::Vector2f direction);
+	void draw(sf::Transformable& parent);
 	sf::RectangleShape shape;
 	RectangleCollider collider;
 private:

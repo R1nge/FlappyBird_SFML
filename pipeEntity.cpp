@@ -12,13 +12,14 @@ void PipeEntity::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
 {
 	if (_transform.getPosition().x <= 0) {
 		_transform.setPosition(sf::Vector2f(800, 0));
+		scoreHandler.addScore(1);
 	}
 	else {
 		_transform.move(direction);
 	}
 	
 	_top.collider.update();
-	_top.draw();
+	_top.draw(_transform);
 	_bottom.collider.update();
-	_bottom.draw();
+	_bottom.draw(_transform);
 }
