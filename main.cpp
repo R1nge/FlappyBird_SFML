@@ -11,7 +11,6 @@ int main()
 	bool _drawColliders = false;
 
 	//TODO:
-	//Randomize pipes positions
 	//Sounds
 	//States w state machine; enums based
 	//Main menu, in game menu, game over menu
@@ -31,10 +30,10 @@ int main()
 	sf::Texture pipeSprite;
 	pipeSprite.loadFromFile("Pipe.png");
 
-	Pipe pipe(&window, 100, 200, pipeSprite, sf::Vector2f(0,0));
+	Pipe pipe(&window, 100, 200, pipeSprite, sf::Vector2f(-600,0));
 	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
 	pipe.shape.rotate(180);
-	Pipe pipe2(&window, 100, 200, pipeSprite, sf::Vector2f(0, 600));
+	Pipe pipe2(&window, 100, 200, pipeSprite, sf::Vector2f(-600, 600));
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
@@ -68,10 +67,9 @@ int main()
 
 		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
 			std::cout << "Collision \n" << std::endl;
+			window.close();
 		}
-		else {
 			
-		}
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
