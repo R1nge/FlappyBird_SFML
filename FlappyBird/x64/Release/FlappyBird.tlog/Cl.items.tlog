@@ -1,4 +1,5 @@
 C:\Users\R1nge\source\repos\FlappyBird\circleCollider.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\circleCollider.obj
+C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\gameplayState.obj
 C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\pipeEntity.obj
 C:\Users\R1nge\source\repos\FlappyBird\rectangleCollider.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\rectangleCollider.obj
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\main.obj
@@ -6,3 +7,4 @@ C:\Users\R1nge\source\repos\FlappyBird\pipe.cpp;C:\Users\R1nge\source\repos\Flap
 C:\Users\R1nge\source\repos\FlappyBird\player.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\player.obj
 C:\Users\R1nge\source\repos\FlappyBird\playerInput.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\playerInput.obj
 C:\Users\R1nge\source\repos\FlappyBird\scoreHandler.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\scoreHandler.obj
+C:\Users\R1nge\source\repos\FlappyBird\state.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Release\state.obj

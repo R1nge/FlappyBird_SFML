@@ -146,6 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="circleCollider.cpp" />
+    <ClCompile Include="gameplayState.cpp" />
     <ClCompile Include="pipeEntity.cpp" />
     <ClCompile Include="rectangleCollider.cpp" />
     <ClCompile Include="main.cpp" />
@@ -153,15 +154,18 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="playerInput.cpp" />
     <ClCompile Include="scoreHandler.cpp" />
+    <ClCompile Include="state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circleCollider.h" />
+    <ClInclude Include="gameplayState.h" />
     <ClInclude Include="pipeEntity.h" />
     <ClInclude Include="rectangleCollider.h" />
     <ClInclude Include="pipe.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="playerInput.h" />
     <ClInclude Include="scoreHandler.h" />
+    <ClInclude Include="state.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="score.txt" />

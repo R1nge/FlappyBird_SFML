@@ -5,120 +5,43 @@
 #include"pipeEntity.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "gameplayState.h"
 
 int main()
 {
-	bool _drawColliders = false;
+	enum game_states {
+		Menu,
+		Gameplay,
+		Gameover
+	};
+
+	game_states _gameState = Gameplay;
 
 	//TODO:
+	// an update loop
+	// a game state service that holds current state
+	// update loop would 
 	//Sounds
-	//States w state machine; enums based
-	//Main menu, in game menu, game over menu
-
-	ScoreHandler scoreHandler = ScoreHandler();
 
 	sf::RenderWindow window(sf::VideoMode(600, 800), "Flappy Bird");
 	window.setFramerateLimit(60);
 	window.setKeyRepeatEnabled(false);
 
-	sf::Texture playerSprite;
-	playerSprite.loadFromFile("Bird.png");
+	ScoreHandler scoreHandler = ScoreHandler();
 
-	Player player(&window, 100, playerSprite);
-	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
-	
-	sf::Texture pipeSprite;
-	pipeSprite.loadFromFile("Pipe.png");
+	GameplayState _gameState2 = GameplayState(window, scoreHandler);
 
-	Pipe pipe(&window, 100, 200, pipeSprite, sf::Vector2f(-600,0));
-	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
-	pipe.shape.rotate(180);
-	Pipe pipe2(&window, 100, 200, pipeSprite, sf::Vector2f(-600, 600));
-	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
-
-	sf::Transformable PipeTransform = sf::Transformable::Transformable();
-	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform);
-
-
-	sf::Texture backgroundSprite;
-	backgroundSprite.loadFromFile("Background.png");
-	sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(window.getSize().x, window.getSize().y));
-	backgroundShape.setTexture(&backgroundSprite);
-
-	sf::Text text;
-	sf::Font font;
-
-	if (font.loadFromFile("Carre.ttf"))
+	switch (_gameState)
 	{
-		text.setFont(font);
-		text.setCharacterSize(24);
-		text.setFillColor(sf::Color::White);
-		text.setPosition(sf::Vector2f(window.getSize().x / 2, window.getSize().y / 8));
-	}
-
-	while (window.isOpen())
-	{
-		playerInput.update();
-
-		player.move(playerInput.getPlayerInput());
-		player.collider.Update();
-
-		pipeEntity.move(sf::Vector2f(-1,0), scoreHandler);
-
-		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
-			std::cout << "Collision \n" << std::endl;
-			window.close();
-		}
-			
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-
-			playerInput.process(event);
-
-			if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-				
-				_drawColliders = !_drawColliders;
-				std::cout << "Collider debug is " << _drawColliders << std::endl;
-			}
-		}
-
-		window.clear();
-
-		window.draw(backgroundShape);
-
-		if (_drawColliders) 
-		{
-			player.collider.draw();
-			pipe.collider.draw();
-			pipe2.collider.draw();
-		}
-		else 
-		{
-			player.draw();
-			pipe.draw(PipeTransform);
-			pipe2.draw(PipeTransform);
-		}
-
-		text.setString(std::to_string(scoreHandler.getHighScore()));
-
-		window.draw(text);
-
-		//std::cout << scoreHandler.getHighScore() << std::endl;
-
-
-		//std::ofstream outFile("score.txt");
-		//outFile << scoreHandler.getScore();
-		//outFile.close();
-
-		//std::ifstream inFile("score.txt");
-		//inFile >> scoreHandler;
-		//inFile.close();
-		//std::cout << scoreHandler.getScore();
-		
-		window.display();
+	case Menu:
+		break;
+	case Gameplay:
+		_gameState2.Enter();
+		break;
+	case Gameover:
+		break;
+	default:
+		break;
 	}
 
 	return 0;
