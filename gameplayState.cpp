@@ -66,6 +66,10 @@ void GameplayState::Enter()
 
 		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
 			std::cout << "Collision \n" << std::endl;
+			std::cout << "exit" << std::endl;
+			std::ofstream outFile("score.txt");
+			outFile << _scoreHandler->getHighScore();
+			outFile.close();
 			_window->close();
 		}
 
@@ -101,26 +105,21 @@ void GameplayState::Enter()
 			pipe2.draw(PipeTransform);
 		}
 
-		text.setString(std::to_string(_scoreHandler->getHighScore()));
+		text.setString(std::to_string(_scoreHandler->getScore()));
 
 		_window->draw(text);
 
 		//std::cout << scoreHandler.getHighScore() << std::endl;
 
 
-		//std::ofstream outFile("score.txt");
-		//outFile << scoreHandler.getScore();
-		//outFile.close();
+		
 
-		//std::ifstream inFile("score.txt");
-		//inFile >> scoreHandler;
-		//inFile.close();
-		//std::cout << scoreHandler.getScore();
+		
 
 		_window->display();
 	}
 }
 
 void GameplayState::Exit() {
-	std::cout << "exit" << std::endl;
+	
 }

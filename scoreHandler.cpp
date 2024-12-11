@@ -11,6 +11,11 @@ void ScoreHandler::addScore(int amount)
 	}
 }
 
+int ScoreHandler::getScore() 
+{
+	return _score;
+}
+
 int ScoreHandler::getHighScore()
 {
 	return _highScore;

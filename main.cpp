@@ -30,6 +30,11 @@ int main()
 	ScoreHandler scoreHandler = ScoreHandler();
 	Randomizer randomizer = Randomizer(-400, 400);
 
+	std::ifstream inFile("score.txt");
+	inFile >> scoreHandler;
+	inFile.close();
+	std::cout << scoreHandler.getScore();
+
 	GameplayState _gameState2 = GameplayState(window, scoreHandler, randomizer);
 
 	switch (_gameState)
