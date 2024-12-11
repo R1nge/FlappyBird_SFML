@@ -22,11 +22,12 @@ void GameplayState::Enter()
 	pipeSprite.loadFromFile("Pipe.png");
 
 	int height = _window->getSize().y * .75f;
+	int width = height * 0.1f;
 
-	Pipe pipe(_window, 100, height, pipeSprite, sf::Vector2f(-600, 0));
+	Pipe pipe(_window, width, height, pipeSprite, sf::Vector2f(-600, 0));
 	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
 	pipe.shape.rotate(180);
-	Pipe pipe2(_window, 100, height, pipeSprite, sf::Vector2f(-600, 800));
+	Pipe pipe2(_window, width, height, pipeSprite, sf::Vector2f(-600, 800));
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
