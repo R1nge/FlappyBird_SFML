@@ -1,9 +1,10 @@
 #include "gameplayState.h"
 
-GameplayState::GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler)
+GameplayState::GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler, Randomizer& randomizer)
 {
 	_window = &window;
 	_scoreHandler = &scoreHandler;
+	_randomizer = &randomizer;
 }
 
 void GameplayState::Enter()
@@ -14,20 +15,22 @@ void GameplayState::Enter()
 	sf::Texture playerSprite;
 	playerSprite.loadFromFile("Bird.png");
 
-	Player player(_window, 100, playerSprite);
+	Player player(_window, 50, playerSprite);
 	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
 
 	sf::Texture pipeSprite;
 	pipeSprite.loadFromFile("Pipe.png");
 
-	Pipe pipe(_window, 100, 200, pipeSprite, sf::Vector2f(-600, 0));
+	int height = _window->getSize().y * .75f;
+
+	Pipe pipe(_window, 100, height, pipeSprite, sf::Vector2f(-600, 0));
 	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
 	pipe.shape.rotate(180);
-	Pipe pipe2(_window, 100, 200, pipeSprite, sf::Vector2f(-600, 600));
+	Pipe pipe2(_window, 100, height, pipeSprite, sf::Vector2f(-600, 800));
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
-	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform);
+	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform, *_randomizer);
 
 
 	sf::Texture backgroundSprite;

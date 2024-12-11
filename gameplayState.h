@@ -10,11 +10,12 @@ class GameplayState :
     public State
 {
 public:
-    GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler);
+    GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler, Randomizer& randomizer);
     void Enter();
     void Exit();
 private:
     sf::RenderWindow* _window;
     ScoreHandler* _scoreHandler;
+    Randomizer* _randomizer;
 };
 

@@ -28,8 +28,9 @@ int main()
 	window.setKeyRepeatEnabled(false);
 
 	ScoreHandler scoreHandler = ScoreHandler();
+	Randomizer randomizer = Randomizer(-400, 400);
 
-	GameplayState _gameState2 = GameplayState(window, scoreHandler);
+	GameplayState _gameState2 = GameplayState(window, scoreHandler, randomizer);
 
 	switch (_gameState)
 	{

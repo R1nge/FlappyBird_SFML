@@ -148,6 +148,7 @@
     <ClCompile Include="circleCollider.cpp" />
     <ClCompile Include="gameplayState.cpp" />
     <ClCompile Include="pipeEntity.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="rectangleCollider.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pipe.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="circleCollider.h" />
     <ClInclude Include="gameplayState.h" />
     <ClInclude Include="pipeEntity.h" />
+    <ClInclude Include="Randomizer.h" />
     <ClInclude Include="rectangleCollider.h" />
     <ClInclude Include="pipe.h" />
     <ClInclude Include="player.h" />

@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:gameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:gameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:Randomizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:Randomizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:gameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:gameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:pipeEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:pipeEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:scoreHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\playerInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:playerInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:scoreHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:rectangleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:rectangleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,40 +71,12 @@
       "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:rectangleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:pipeEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:rectangleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:scoreHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\circleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:circleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\circleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:circleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:scoreHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\playerInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|solutionrelative:playerInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5398EF5-1359-4C1D-97FD-0DE4A538281D}|FlappyBird.vcxproj|C:\\Users\\R1nge\\source\\repos\\FlappyBird\\playerInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -78,17 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-30T10:48:14.214Z",
               "IsPinned": true,
@@ -96,13 +108,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "gameplayState.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.h",
               "RelativeDocumentMoniker": "gameplayState.h",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.h",
               "RelativeToolTip": "gameplayState.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-10T21:02:13.106Z",
               "IsPinned": true,
@@ -110,20 +122,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pipeEntity.h",
+              "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.h",
+              "RelativeDocumentMoniker": "pipeEntity.h",
+              "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.h",
+              "RelativeToolTip": "pipeEntity.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T10:55:02.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Randomizer.cpp",
+              "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.cpp",
+              "RelativeDocumentMoniker": "Randomizer.cpp",
+              "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.cpp",
+              "RelativeToolTip": "Randomizer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-11T10:59:03.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Randomizer.h",
+              "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.h",
+              "RelativeDocumentMoniker": "Randomizer.h",
+              "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\Randomizer.h",
+              "RelativeToolTip": "Randomizer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T10:58:53.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "gameplayState.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.cpp",
               "RelativeDocumentMoniker": "gameplayState.cpp",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.cpp",
               "RelativeToolTip": "gameplayState.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-10T21:06:06.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "state.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\state.h",
               "RelativeDocumentMoniker": "state.h",
@@ -131,12 +182,11 @@
               "RelativeToolTip": "state.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T20:34:29.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T20:34:29.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "pipe.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipe.cpp",
               "RelativeDocumentMoniker": "pipe.cpp",
@@ -144,12 +194,11 @@
               "RelativeToolTip": "pipe.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-01T10:01:47.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:01:47.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "player.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\player.cpp",
               "RelativeDocumentMoniker": "player.cpp",
@@ -157,12 +206,11 @@
               "RelativeToolTip": "player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-30T11:52:27.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T11:52:27.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "rectangleCollider.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.h",
               "RelativeDocumentMoniker": "rectangleCollider.h",
@@ -170,23 +218,25 @@
               "RelativeToolTip": "rectangleCollider.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T09:58:08.243Z"
+              "WhenOpened": "2024-12-01T09:58:08.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "pipeEntity.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.cpp",
               "RelativeDocumentMoniker": "pipeEntity.cpp",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipeEntity.cpp",
               "RelativeToolTip": "pipeEntity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-01T17:31:59.194Z"
+              "WhenOpened": "2024-12-01T17:31:59.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "rectangleCollider.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\rectangleCollider.cpp",
               "RelativeDocumentMoniker": "rectangleCollider.cpp",
@@ -194,11 +244,12 @@
               "RelativeToolTip": "rectangleCollider.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAlwAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-01T09:58:12.63Z"
+              "WhenOpened": "2024-12-01T09:58:12.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "pipe.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\pipe.h",
               "RelativeDocumentMoniker": "pipe.h",
@@ -206,11 +257,12 @@
               "RelativeToolTip": "pipe.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T13:52:37.117Z"
+              "WhenOpened": "2024-12-01T13:52:37.117Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "player.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\player.h",
               "RelativeDocumentMoniker": "player.h",
@@ -223,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "scoreHandler.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.cpp",
               "RelativeDocumentMoniker": "scoreHandler.cpp",
@@ -231,11 +283,12 @@
               "RelativeToolTip": "scoreHandler.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-01T13:47:36.914Z"
+              "WhenOpened": "2024-12-01T13:47:36.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "playerInput.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\playerInput.h",
               "RelativeDocumentMoniker": "playerInput.h",
@@ -243,11 +296,12 @@
               "RelativeToolTip": "playerInput.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T13:14:51.502Z"
+              "WhenOpened": "2024-12-01T13:14:51.502Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "scoreHandler.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\scoreHandler.h",
               "RelativeDocumentMoniker": "scoreHandler.h",
@@ -255,11 +309,12 @@
               "RelativeToolTip": "scoreHandler.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T13:46:36.219Z"
+              "WhenOpened": "2024-12-01T13:46:36.219Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "playerInput.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\playerInput.cpp",
               "RelativeDocumentMoniker": "playerInput.cpp",
@@ -271,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "circleCollider.h",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\circleCollider.h",
               "RelativeDocumentMoniker": "circleCollider.h",
@@ -283,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "circleCollider.cpp",
               "DocumentMoniker": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\circleCollider.cpp",
               "RelativeDocumentMoniker": "circleCollider.cpp",
