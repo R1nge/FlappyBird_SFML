@@ -1,26 +1,20 @@
-#include "pipe.h"
-#include "player.h"
-#include "playerInput.h"
-#include"scoreHandler.h"
-#include"pipeEntity.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
+
 #include "gameplayState.h"
+#include "pipeEntity.h"
+#include "scoreHandler.h"
+#include "StateMachine.h"
+
+enum class game_states {
+	Menu,
+	Gameplay,
+	Gameover
+};
 
 int main()
 {
-	enum game_states {
-		Menu,
-		Gameplay,
-		Gameover
-	};
-
-	game_states _gameState = Gameplay;
-
 	//TODO:
-	// an update loop
-	// a game state service that holds current state
-	// update loop would 
 	//Sounds
 
 	sf::RenderWindow window(sf::VideoMode(600, 800), "Flappy Bird");
@@ -35,20 +29,13 @@ int main()
 	inFile.close();
 	std::cout << scoreHandler.getScore();
 
-	GameplayState _gameState2 = GameplayState(window, scoreHandler, randomizer);
+	StateMachine state_machine = StateMachine();
+	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer);
+	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
 
-	switch (_gameState)
-	{
-	case Menu:
-		break;
-	case Gameplay:
-		_gameState2.Enter();
-		break;
-	case Gameover:
-		break;
-	default:
-		break;
-	}
+	state_machine.SwitchState(game_states::Gameplay);
 
+
+	
 	return 0;
 }

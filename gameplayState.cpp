@@ -9,7 +9,7 @@ GameplayState::GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandle
 
 void GameplayState::Enter()
 {
-	std::cout << "enter" << std::endl;
+	std::cout << "1" << std::endl;
 
 	bool _drawColliders = false;
 	sf::Image playerImage;
@@ -57,7 +57,7 @@ void GameplayState::Enter()
 
 	while (_window->isOpen())
 	{
-		playerInput.update();
+ 		playerInput.update();
 
 		player.move(playerInput.getPlayerInput());
 		player.collider.Update();
@@ -108,13 +108,6 @@ void GameplayState::Enter()
 		text.setString(std::to_string(_scoreHandler->getScore()));
 
 		_window->draw(text);
-
-		//std::cout << scoreHandler.getHighScore() << std::endl;
-
-
-		
-
-		
 
 		_window->display();
 	}

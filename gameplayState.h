@@ -11,8 +11,8 @@ class GameplayState :
 {
 public:
     GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler, Randomizer& randomizer);
-    void Enter();
-    void Exit();
+    void Enter() override;
+    void Exit() override;
 private:
     sf::RenderWindow* _window;
     ScoreHandler* _scoreHandler;

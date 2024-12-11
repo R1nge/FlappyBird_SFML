@@ -156,6 +156,7 @@
     <ClCompile Include="playerInput.cpp" />
     <ClCompile Include="scoreHandler.cpp" />
     <ClCompile Include="state.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circleCollider.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="playerInput.h" />
     <ClInclude Include="scoreHandler.h" />
     <ClInclude Include="state.h" />
+    <ClInclude Include="StateMachine.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="score.txt" />
