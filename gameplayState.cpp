@@ -12,8 +12,13 @@ void GameplayState::Enter()
 	std::cout << "enter" << std::endl;
 
 	bool _drawColliders = false;
+	sf::Image playerImage;
+
+	playerImage.loadFromFile("Bird2.png");
+	playerImage.createMaskFromColor(sf::Color::Green);
+
 	sf::Texture playerSprite;
-	playerSprite.loadFromFile("Bird.png");
+	playerSprite.loadFromImage(playerImage);
 
 	Player player(_window, 50, playerSprite);
 	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
