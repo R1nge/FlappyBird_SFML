@@ -24,5 +24,9 @@ private:
     PlayerInput* _playerInput;
     sf::Texture* _playerSprite;
     sf::Texture* _pipeSprite;
+    Pipe* _topPipe;
+    Pipe* _bottomPipe;
+    sf::Transformable* _pipeTransformable;
+    PipeEntity* _pipeEntity;
 };
 

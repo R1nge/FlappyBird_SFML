@@ -29,15 +29,14 @@ void GameplayState::Enter()
 	int height = _window->getSize().y * .75f;
 	int width = height * 0.1f;
 
-	Pipe pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));
-	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
-	pipe.shape.rotate(180);
-	Pipe pipe2(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 800));
-	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
+	_topPipe = new Pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));
+	_topPipe->shape.setOrigin(sf::Vector2f(_topPipe->shape.getSize().x / 2, _topPipe->shape.getSize().y / 2));
+	_topPipe->shape.rotate(180);
+	_bottomPipe = new Pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 800));
+	_bottomPipe->shape.setOrigin(sf::Vector2f(_bottomPipe->shape.getSize().x / 2, _bottomPipe->shape.getSize().y / 2));
 
-	sf::Transformable PipeTransform = sf::Transformable::Transformable();
-	PipeEntity pipeEntity = PipeEntity::PipeEntity(pipe, pipe2, PipeTransform, *_randomizer);
-
+	_pipeTransformable = new sf::Transformable();
+	_pipeEntity = new PipeEntity(*_topPipe, *_bottomPipe, *_pipeTransformable, *_randomizer);
 
 	sf::Texture backgroundSprite;
 	backgroundSprite.loadFromFile("Background.png");
@@ -75,11 +74,10 @@ void GameplayState::Update() {
 			//std::cout << "Collider debug is " << _drawColliders << std::endl;
 		}
 	}
+	
+	_pipeEntity->move(sf::Vector2f(-1, 0), *_scoreHandler);
 
-	/*
-	pipeEntity.move(sf::Vector2f(-1, 0), *_scoreHandler);
-
-	if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
+	if (_player->collider.checkCollision(_topPipe->collider.Bbox) || _player->collider.checkCollision(_bottomPipe->collider.Bbox)) {
 		std::cout << "Collision \n" << std::endl;
 		std::cout << "exit" << std::endl;
 		std::ofstream outFile("score.txt");
@@ -88,24 +86,9 @@ void GameplayState::Update() {
 		_window->close();
 	}
 
-	sf::Event event;
-	while (_window->pollEvent(event))
-	{
-		if (event.type == sf::Event::Closed)
-			_window->close();
-
-		playerInput.process(event);
-
-		if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-
-			_drawColliders = !_drawColliders;
-			std::cout << "Collider debug is " << _drawColliders << std::endl;
-		}
-	}
-
 	_window->clear();
 
-	_window->draw(backgroundShape);
+	/*_window->draw(backgroundShape);
 
 	if (_drawColliders)
 	{
@@ -123,6 +106,8 @@ void GameplayState::Update() {
 	_window->clear();
 
 	_player->draw();
+	_topPipe->draw(*_pipeTransformable);
+	_bottomPipe->draw(*_pipeTransformable);
 
 	_scoreText.setString(std::to_string(_scoreHandler->getScore()));
 
@@ -136,4 +121,8 @@ void GameplayState::Exit() {
 	delete(_player);
 	delete(_playerSprite);
 	delete(_pipeSprite);
+	delete(_pipeEntity);
+	delete(_pipeTransformable);
+	delete(_bottomPipe);
+	delete(_topPipe);
 }
