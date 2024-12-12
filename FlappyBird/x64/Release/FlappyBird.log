@@ -1,25 +1,27 @@
-﻿  MenuState.cpp
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,97): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(12,75): warning C4244:         ]
+﻿  GameStatescpp.cpp
+  MenuState.cpp
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(14,75): warning C4244:         ]
+  main.cpp
   Generating code
-  1 of 338 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  82 of 338 functions (24.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    19 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

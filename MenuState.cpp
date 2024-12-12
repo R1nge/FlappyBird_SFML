@@ -1,8 +1,10 @@
 #include "MenuState.h"
+#include "GameStatescpp.cpp"
 
-MenuState::MenuState(sf::RenderWindow& window)
+MenuState::MenuState(sf::RenderWindow& window, StateMachine& stateMachine)
 {
 	_window = &window;
+	_stateMachine = &stateMachine;
 }
 
 void MenuState::Enter()
@@ -19,6 +21,12 @@ void MenuState::Update() {
 	{
 		if (event.type == sf::Event::Closed)
 			_window->close();
+
+		if (event.type == sf::Event::KeyPressed) {
+			if (event.key.code == sf::Keyboard::Space) {
+				_stateMachine->SwitchState(game_states::Gameplay);
+			}
+		}
 	}
 
 

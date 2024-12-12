@@ -6,12 +6,7 @@
 #include "scoreHandler.h"
 #include "StateMachine.h"
 #include "MenuState.h"
-
-enum class game_states {
-	Menu,
-	Gameplay,
-	Gameover
-};
+#include "GameStatescpp.cpp"
 
 int main()
 {
@@ -32,7 +27,7 @@ int main()
 	std::cout << scoreHandler.getScore();
 
 	StateMachine state_machine = StateMachine();
-	MenuState _menuState = MenuState(window);
+	MenuState _menuState = MenuState(window, state_machine);
 	state_machine.AddState(&_menuState, game_states::Menu);
 	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer);
 	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
