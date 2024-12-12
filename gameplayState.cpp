@@ -17,10 +17,10 @@ void GameplayState::Enter()
 	playerImage.loadFromFile("Bird2.png");
 	playerImage.createMaskFromColor(sf::Color::Green);
 
-	sf::Texture playerSprite;
-	playerSprite.loadFromImage(playerImage);
+	_playerSprite = new sf::Texture();
+	_playerSprite->loadFromImage(playerImage);
 
-	_player = new Player(_window, 50, playerSprite);
+	_player = new Player(_window, 50, *_playerSprite);
 	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
 	sf::Texture pipeSprite;
@@ -134,4 +134,5 @@ void GameplayState::Update() {
 void GameplayState::Exit() {
 	delete(_playerInput);
 	delete(_player);
+	delete(_playerSprite);
 }

@@ -22,5 +22,6 @@ private:
     sf::Font _font;
     Player* _player;
     PlayerInput* _playerInput;
+    sf::Texture* _playerSprite;
 };
 
