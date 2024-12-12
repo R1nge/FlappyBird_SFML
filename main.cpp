@@ -5,6 +5,7 @@
 #include "pipeEntity.h"
 #include "scoreHandler.h"
 #include "StateMachine.h"
+#include "MenuState.h"
 
 enum class game_states {
 	Menu,
@@ -31,11 +32,12 @@ int main()
 	std::cout << scoreHandler.getScore();
 
 	StateMachine state_machine = StateMachine();
-
+	MenuState _menuState = MenuState(window);
+	state_machine.AddState(&_menuState, game_states::Menu);
 	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer);
 	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
 
-  	state_machine.SwitchState(game_states::Gameplay);
+  	state_machine.SwitchState(game_states::Menu);
 
 	while (window.isOpen())
 	{
