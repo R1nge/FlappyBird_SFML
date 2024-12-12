@@ -10,7 +10,6 @@ MenuState::MenuState(sf::RenderWindow& window, StateMachine& stateMachine)
 
 void MenuState::Enter()
 {
-	_entering = true;
 	_backgroundSprite = new sf::Texture();
 	_backgroundSprite->loadFromFile("Background.png");
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));

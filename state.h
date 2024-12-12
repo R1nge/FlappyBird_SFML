@@ -6,6 +6,6 @@ public:
 	virtual void Update();
 	virtual void Exit();
 protected:
-	bool _entering;
+	bool _entering = true;
 	bool _exiting;
 };
