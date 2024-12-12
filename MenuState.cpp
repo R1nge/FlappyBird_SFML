@@ -1,5 +1,6 @@
 #include "MenuState.h"
 #include "GameStatescpp.cpp"
+#include <iostream>
 
 MenuState::MenuState(sf::RenderWindow& window, StateMachine& stateMachine)
 {
@@ -29,9 +30,15 @@ void MenuState::Update() {
 		if (event.type == sf::Event::Closed)
 			_window->close();
 
-		if (event.type == sf::Event::KeyPressed) {
-			if (event.key.code == sf::Keyboard::Space) {
-				_stateMachine->SwitchState(game_states::Gameplay);
+		if (event.type == sf::Event::MouseButtonPressed)
+		{
+			if (event.mouseButton.button == sf::Mouse::Left)
+			{
+				if (event.mouseButton.x >= 100) {
+					_stateMachine->SwitchState(game_states::Gameplay);
+				}
+				std::cout << "mouse x: " << event.mouseButton.x << std::endl;
+				std::cout << "mouse y: " << event.mouseButton.y << std::endl;
 			}
 		}
 	}
