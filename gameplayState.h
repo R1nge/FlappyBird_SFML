@@ -23,5 +23,6 @@ private:
     Player* _player;
     PlayerInput* _playerInput;
     sf::Texture* _playerSprite;
+    sf::Texture* _pipeSprite;
 };
 

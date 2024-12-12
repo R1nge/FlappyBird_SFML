@@ -23,16 +23,16 @@ void GameplayState::Enter()
 	_player = new Player(_window, 50, *_playerSprite);
 	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
-	sf::Texture pipeSprite;
-	pipeSprite.loadFromFile("Pipe.png");
+	_pipeSprite = new sf::Texture();
+	_pipeSprite->loadFromFile("Pipe.png");
 
 	int height = _window->getSize().y * .75f;
 	int width = height * 0.1f;
 
-	Pipe pipe(_window, width, height, pipeSprite, sf::Vector2f(-600, 0));
+	Pipe pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));
 	pipe.shape.setOrigin(sf::Vector2f(pipe.shape.getSize().x / 2, pipe.shape.getSize().y / 2));
 	pipe.shape.rotate(180);
-	Pipe pipe2(_window, width, height, pipeSprite, sf::Vector2f(-600, 800));
+	Pipe pipe2(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 800));
 	pipe2.shape.setOrigin(sf::Vector2f(pipe2.shape.getSize().x / 2, pipe2.shape.getSize().y / 2));
 
 	sf::Transformable PipeTransform = sf::Transformable::Transformable();
@@ -135,4 +135,5 @@ void GameplayState::Exit() {
 	delete(_playerInput);
 	delete(_player);
 	delete(_playerSprite);
+	delete(_pipeSprite);
 }
