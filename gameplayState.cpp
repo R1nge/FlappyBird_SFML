@@ -44,20 +44,16 @@ void GameplayState::Enter()
 	sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	backgroundShape.setTexture(&backgroundSprite);
 
-	sf::Text text;
-	sf::Font font;
-
-	if (font.loadFromFile("Carre.ttf"))
+	if (_font.loadFromFile("Carre.ttf"))
 	{
-		text.setFont(font);
-		text.setCharacterSize(24);
-		text.setFillColor(sf::Color::White);
-		text.setPosition(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 8));
+		_scoreText.setFont(_font);
+		_scoreText.setCharacterSize(24);
+		_scoreText.setFillColor(sf::Color::White);
+		_scoreText.setPosition(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 8));
 	}
 }
 
 void GameplayState::Update() {
-	std::cout << "Update" << std::endl;
 	/*playerInput.update();
 
 	player.move(playerInput.getPlayerInput());
@@ -104,13 +100,13 @@ void GameplayState::Update() {
 		player.draw();
 		pipe.draw(PipeTransform);
 		pipe2.draw(PipeTransform);
-	}
+	}*/
 
-	text.setString(std::to_string(_scoreHandler->getScore()));
+	_scoreText.setString(std::to_string(_scoreHandler->getScore()));
 
-	_window->draw(text);
+	_window->draw(_scoreText);
 
-	_window->display();*/
+	_window->display();
 }
 
 void GameplayState::Exit() {

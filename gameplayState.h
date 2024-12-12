@@ -18,5 +18,7 @@ private:
     sf::RenderWindow* _window;
     ScoreHandler* _scoreHandler;
     Randomizer* _randomizer;
+    sf::Text _scoreText;
+    sf::Font _font;
 };
 
