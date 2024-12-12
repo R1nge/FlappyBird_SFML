@@ -111,8 +111,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAnwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-30T10:48:14.214Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -122,7 +121,7 @@
               "RelativeDocumentMoniker": "gameplayState.cpp",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.cpp",
               "RelativeToolTip": "gameplayState.cpp",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAH4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-10T21:06:06.768Z",
               "IsPinned": true,
@@ -136,7 +135,7 @@
               "RelativeDocumentMoniker": "gameplayState.h",
               "ToolTip": "C:\\Users\\R1nge\\source\\repos\\FlappyBird\\gameplayState.h",
               "RelativeToolTip": "gameplayState.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-10T21:02:13.106Z",
               "IsPinned": true,

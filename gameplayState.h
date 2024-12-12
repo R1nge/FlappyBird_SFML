@@ -28,5 +28,7 @@ private:
     Pipe* _bottomPipe;
     sf::Transformable* _pipeTransformable;
     PipeEntity* _pipeEntity;
+    sf::Texture* _backgroundSprite;
+    sf::RectangleShape* _backgroundShape;
 };
 

@@ -38,10 +38,10 @@ void GameplayState::Enter()
 	_pipeTransformable = new sf::Transformable();
 	_pipeEntity = new PipeEntity(*_topPipe, *_bottomPipe, *_pipeTransformable, *_randomizer);
 
-	sf::Texture backgroundSprite;
-	backgroundSprite.loadFromFile("Background.png");
-	sf::RectangleShape backgroundShape = sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
-	backgroundShape.setTexture(&backgroundSprite);
+	_backgroundSprite = new sf::Texture();
+	_backgroundSprite->loadFromFile("Background.png");
+	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
+	_backgroundShape->setTexture(_backgroundSprite);
 
 	if (_font.loadFromFile("Carre.ttf"))
 	{
@@ -88,22 +88,7 @@ void GameplayState::Update() {
 
 	_window->clear();
 
-	/*_window->draw(backgroundShape);
-
-	if (_drawColliders)
-	{
-		player.collider.draw();
-		pipe.collider.draw();
-		pipe2.collider.draw();
-	}
-	else
-	{
-		player.draw();
-		pipe.draw(PipeTransform);
-		pipe2.draw(PipeTransform);
-	}*/
-
-	_window->clear();
+	_window->draw(*_backgroundShape);
 
 	_player->draw();
 	_topPipe->draw(*_pipeTransformable);
