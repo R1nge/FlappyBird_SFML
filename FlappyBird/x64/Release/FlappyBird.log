@@ -1,7 +1,7 @@
-﻿  main.cpp
+﻿  state.cpp
   Generating code
-  2 of 327 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  150 of 278 functions (54.0%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    11 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

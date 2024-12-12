@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="circleCollider.cpp" />
     <ClCompile Include="gameplayState.cpp" />
+    <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="pipeEntity.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="rectangleCollider.cpp" />
@@ -161,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="circleCollider.h" />
     <ClInclude Include="gameplayState.h" />
+    <ClInclude Include="MenuState.h" />
     <ClInclude Include="pipeEntity.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="rectangleCollider.h" />

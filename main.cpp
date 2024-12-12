@@ -24,18 +24,23 @@ int main()
 	ScoreHandler scoreHandler = ScoreHandler();
 	Randomizer randomizer = Randomizer(-400, 400);
 
+	//TODO: loader/saver class
 	std::ifstream inFile("score.txt");
 	inFile >> scoreHandler;
 	inFile.close();
 	std::cout << scoreHandler.getScore();
 
 	StateMachine state_machine = StateMachine();
+
 	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer);
 	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
 
-	state_machine.SwitchState(game_states::Gameplay);
+  	state_machine.SwitchState(game_states::Gameplay);
 
-
+	while (window.isOpen())
+	{
+		state_machine.Update();
+	}
 	
 	return 0;
 }

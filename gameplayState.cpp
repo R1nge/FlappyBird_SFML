@@ -54,63 +54,63 @@ void GameplayState::Enter()
 		text.setFillColor(sf::Color::White);
 		text.setPosition(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 8));
 	}
+}
 
-	while (_window->isOpen())
-	{
- 		playerInput.update();
+void GameplayState::Update() {
+	std::cout << "Update" << std::endl;
+	/*playerInput.update();
 
-		player.move(playerInput.getPlayerInput());
-		player.collider.Update();
+	player.move(playerInput.getPlayerInput());
+	player.collider.Update();
 
-		pipeEntity.move(sf::Vector2f(-1, 0), *_scoreHandler);
+	pipeEntity.move(sf::Vector2f(-1, 0), *_scoreHandler);
 
-		if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
-			std::cout << "Collision \n" << std::endl;
-			std::cout << "exit" << std::endl;
-			std::ofstream outFile("score.txt");
-			outFile << _scoreHandler->getHighScore();
-			outFile.close();
-			_window->close();
-		}
-
-		sf::Event event;
-		while (_window->pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				_window->close();
-
-			playerInput.process(event);
-
-			if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-
-				_drawColliders = !_drawColliders;
-				std::cout << "Collider debug is " << _drawColliders << std::endl;
-			}
-		}
-
-		_window->clear();
-
-		_window->draw(backgroundShape);
-
-		if (_drawColliders)
-		{
-			player.collider.draw();
-			pipe.collider.draw();
-			pipe2.collider.draw();
-		}
-		else
-		{
-			player.draw();
-			pipe.draw(PipeTransform);
-			pipe2.draw(PipeTransform);
-		}
-
-		text.setString(std::to_string(_scoreHandler->getScore()));
-
-		_window->draw(text);
-
-		_window->display();
+	if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
+		std::cout << "Collision \n" << std::endl;
+		std::cout << "exit" << std::endl;
+		std::ofstream outFile("score.txt");
+		outFile << _scoreHandler->getHighScore();
+		outFile.close();
+		_window->close();
 	}
+
+	sf::Event event;
+	while (_window->pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed)
+			_window->close();
+
+		playerInput.process(event);
+
+		if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+
+			_drawColliders = !_drawColliders;
+			std::cout << "Collider debug is " << _drawColliders << std::endl;
+		}
+	}
+
+	_window->clear();
+
+	_window->draw(backgroundShape);
+
+	if (_drawColliders)
+	{
+		player.collider.draw();
+		pipe.collider.draw();
+		pipe2.collider.draw();
+	}
+	else
+	{
+		player.draw();
+		pipe.draw(PipeTransform);
+		pipe2.draw(PipeTransform);
+	}
+
+	text.setString(std::to_string(_scoreHandler->getScore()));
+
+	_window->draw(text);
+
+	_window->display();*/
 }
 
 void GameplayState::Exit() {

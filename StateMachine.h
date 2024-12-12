@@ -10,6 +10,7 @@ public:
 	void AddState(State* state, game_states gameState);
 	void RemoveState(game_states gameState);
 	void SwitchState(game_states);
+	void Update();
 private:
 	std::map<game_states, State*> _states;
 	State* _currentState;
