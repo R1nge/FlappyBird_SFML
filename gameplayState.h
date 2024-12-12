@@ -20,5 +20,6 @@ private:
     Randomizer* _randomizer;
     sf::Text _scoreText;
     sf::Font _font;
+    PlayerInput* _playerInput;
 };
 

@@ -21,7 +21,7 @@ void GameplayState::Enter()
 	playerSprite.loadFromImage(playerImage);
 
 	Player player(_window, 50, playerSprite);
-	PlayerInput playerInput = PlayerInput::PlayerInput(sf::Vector2f(0, 1), 250);
+	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
 	sf::Texture pipeSprite;
 	pipeSprite.loadFromFile("Pipe.png");
@@ -54,9 +54,11 @@ void GameplayState::Enter()
 }
 
 void GameplayState::Update() {
-	/*playerInput.update();
+	_playerInput->update();
 
-	player.move(playerInput.getPlayerInput());
+	std::cout << _playerInput->getPlayerInput().y << std::endl;
+
+	/*player.move(_playerInput.getPlayerInput());
 	player.collider.Update();
 
 	pipeEntity.move(sf::Vector2f(-1, 0), *_scoreHandler);
