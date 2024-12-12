@@ -54,5 +54,4 @@ void MenuState::Exit() {
 	_exiting = true;
 	delete(_backgroundSprite);
 	delete(_backgroundShape);
-	_exiting = false;
 }
