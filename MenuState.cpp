@@ -14,6 +14,7 @@ void MenuState::Enter()
 	_backgroundSprite->loadFromFile("Background.png");
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite);
+	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100));
 	_entering = false;
 }
 
@@ -33,7 +34,7 @@ void MenuState::Update() {
 		{
 			if (event.mouseButton.button == sf::Mouse::Left)
 			{
-				if (event.mouseButton.x >= 100) {
+				if (_playButton->isPressed(sf::Vector2f(event.mouseButton.x, event.mouseButton.y))) {
 					_stateMachine->SwitchState(game_states::Gameplay);
 				}
 				std::cout << "mouse x: " << event.mouseButton.x << std::endl;
@@ -42,10 +43,15 @@ void MenuState::Update() {
 		}
 	}
 
+	if (_entering || _exiting)
+	{
+		return;
+	}
 
 	_window->clear();
 
 	_window->draw(*_backgroundShape);
+	_playButton->draw(*_window);
 
 	_window->display();
 }
@@ -54,4 +60,5 @@ void MenuState::Exit() {
 	_exiting = true;
 	delete(_backgroundSprite);
 	delete(_backgroundShape);
+	delete(_playButton);
 }

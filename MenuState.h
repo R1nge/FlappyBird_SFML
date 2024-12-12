@@ -2,6 +2,7 @@
 #include "state.h"
 #include"sfml/Graphics.hpp"
 #include "StateMachine.h"
+#include "Button.h"
 class MenuState : 
 	public State
 {
@@ -15,5 +16,6 @@ private:
 	sf::RenderWindow* _window;
 	sf::Texture* _backgroundSprite;
 	sf::RectangleShape* _backgroundShape;
+	Button* _playButton;
 };
 
