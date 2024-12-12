@@ -20,7 +20,7 @@ void GameplayState::Enter()
 	sf::Texture playerSprite;
 	playerSprite.loadFromImage(playerImage);
 
-	Player player(_window, 50, playerSprite);
+	_player = new Player(_window, 50, playerSprite);
 	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
 	sf::Texture pipeSprite;
@@ -58,9 +58,25 @@ void GameplayState::Update() {
 
 	std::cout << _playerInput->getPlayerInput().y << std::endl;
 
-	/*player.move(_playerInput.getPlayerInput());
-	player.collider.Update();
+	_player->move(_playerInput->getPlayerInput());
+	_player->collider.Update();
 
+	sf::Event event;
+	while (_window->pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed)
+			_window->close();
+
+		_playerInput->process(event);
+
+		if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+
+			//_drawColliders = !_drawColliders;
+			//std::cout << "Collider debug is " << _drawColliders << std::endl;
+		}
+	}
+
+	/*
 	pipeEntity.move(sf::Vector2f(-1, 0), *_scoreHandler);
 
 	if (player.collider.checkCollision(pipe.collider.Bbox) || player.collider.checkCollision(pipe2.collider.Bbox)) {
@@ -104,6 +120,10 @@ void GameplayState::Update() {
 		pipe2.draw(PipeTransform);
 	}*/
 
+	_window->clear();
+
+	_player->draw();
+
 	_scoreText.setString(std::to_string(_scoreHandler->getScore()));
 
 	_window->draw(_scoreText);
@@ -112,5 +132,6 @@ void GameplayState::Update() {
 }
 
 void GameplayState::Exit() {
-	
+	delete(_playerInput);
+	delete(_player);
 }
