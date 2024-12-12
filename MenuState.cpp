@@ -9,13 +9,20 @@ MenuState::MenuState(sf::RenderWindow& window, StateMachine& stateMachine)
 
 void MenuState::Enter()
 {
+	_entering = true;
 	_backgroundSprite = new sf::Texture();
 	_backgroundSprite->loadFromFile("Background.png");
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite);
+	_entering = false;
 }
 
 void MenuState::Update() {
+	if (_entering || _exiting)
+	{
+		return;
+	}
+
 	sf::Event event;
 	while (_window->pollEvent(event))
 	{
@@ -38,5 +45,8 @@ void MenuState::Update() {
 }
 
 void MenuState::Exit() {
-
+	_exiting = true;
+	delete(_backgroundSprite);
+	delete(_backgroundShape);
+	_exiting = false;
 }
