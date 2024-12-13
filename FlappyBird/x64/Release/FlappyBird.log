@@ -1,7 +1,53 @@
-﻿  Button.cpp
+﻿  MenuState.cpp
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(15,75): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(17,61): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,83): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,83): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,83): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,83): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,62): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,62): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,62): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp(37,62): warning C4244:         ]
   Generating code
-  2 of 350 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+  2 of 349 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe

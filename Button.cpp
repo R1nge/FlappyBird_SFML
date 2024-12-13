@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-Button::Button(sf::Vector2f center, sf::Vector2f size)
+Button::Button(sf::Vector2f center, sf::Vector2f size, std::string text)
 {
 	_rect.setFillColor(sf::Color::Black);
 	sf::Vector2f adjustedCenter = center - sf::Vector2f(size.x / 2, size.y / 2);
@@ -14,9 +14,11 @@ Button::Button(sf::Vector2f center, sf::Vector2f size)
 		_text = new sf::Text();
 		_text->setFont(*_font);
 		_text->setFillColor(sf::Color::White);
+		_text->setString(text);
 		sf::FloatRect bounds = _text->getLocalBounds();
-		sf::Vector2f size(bounds.left * 2 + bounds.width, bounds.top * 2 + bounds.height);
-		_text->setPosition(size);
+		std::cout << "X: " << size.x << " " << "Y: " << size.y << std::endl;
+		_text->setOrigin(bounds.width / 2, bounds.height / 2);
+		_text->setPosition(size.x / 2, size.y / 2);
 	}
 }
 

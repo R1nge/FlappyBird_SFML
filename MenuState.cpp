@@ -14,8 +14,7 @@ void MenuState::Enter()
 	_backgroundSprite->loadFromFile("Background.png");
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite);
-	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100));
-	_playButton->setText("play");
+	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100), "Play");
 	_entering = false;
 }
 
