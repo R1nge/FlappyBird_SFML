@@ -6,7 +6,7 @@
 #include "scoreHandler.h"
 #include "StateMachine.h"
 #include "MenuState.h"
-#include "GameStatescpp.cpp"
+#include "GameoverState.h"
 
 int main()
 {
@@ -29,8 +29,10 @@ int main()
 	StateMachine state_machine = StateMachine();
 	MenuState _menuState = MenuState(window, state_machine);
 	state_machine.AddState(&_menuState, game_states::Menu);
-	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer);
+	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer, state_machine);
 	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
+	GameoverState _gameoverState = GameoverState();
+	state_machine.AddState(&_gameoverState, game_states::Gameover);
 
   	state_machine.SwitchState(game_states::Menu);
 

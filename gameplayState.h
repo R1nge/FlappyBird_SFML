@@ -6,11 +6,14 @@
 #include "playerInput.h"
 #include "pipe.h"
 #include "pipeEntity.h"
+#include "StateMachine.h"
+#include "GameStatescpp.cpp"
+
 class GameplayState :
     public State
 {
 public:
-    GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler, Randomizer& randomizer);
+    GameplayState(sf::RenderWindow& window, ScoreHandler& scoreHandler, Randomizer& randomizer, StateMachine& stateMachine);
     void Enter() override;
     void Update() override;
     void Exit() override;
@@ -30,5 +33,6 @@ private:
     PipeEntity* _pipeEntity;
     sf::Texture* _backgroundSprite;
     sf::RectangleShape* _backgroundShape;
+    StateMachine* _stateMachine;
 };
 

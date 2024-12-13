@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="circleCollider.cpp" />
+    <ClCompile Include="GameoverState.cpp" />
     <ClCompile Include="gameplayState.cpp" />
     <ClCompile Include="GameStatescpp.cpp" />
     <ClCompile Include="MenuState.cpp" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="Button.h" />
     <ClInclude Include="circleCollider.h" />
+    <ClInclude Include="GameoverState.h" />
     <ClInclude Include="gameplayState.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="pipeEntity.h" />
