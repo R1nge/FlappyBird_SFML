@@ -17,8 +17,24 @@ Button::Button(sf::Vector2f center, sf::Vector2f size, std::string text)
 		_text->setString(text);
 		sf::FloatRect bounds = _text->getLocalBounds();
 		std::cout << "X: " << size.x << " " << "Y: " << size.y << std::endl;
-		_text->setOrigin(bounds.width / 2, bounds.height / 2);
-		_text->setPosition(size.x / 2, size.y / 2);
+
+		float maxHeight = 0;
+		float currentHeight = 0;
+		for (size_t characterIndex = 0; characterIndex < text.size(); ++characterIndex)
+		{
+			currentHeight = _font->getGlyph(text[characterIndex], 12, false).bounds.height;
+			if (currentHeight > maxHeight)
+			{
+				maxHeight = currentHeight;
+			}
+		}
+
+		std::cout << std::endl;
+		std::cout << "max height: " << maxHeight << std::endl;
+		std::cout << "default height: " << bounds.height << std::endl;
+
+		_text->setOrigin(bounds.width / 2, maxHeight / 2);
+		_text->setPosition(size.x / 2, (size.y / 2) - maxHeight * 1.5);
 	}
 }
 
