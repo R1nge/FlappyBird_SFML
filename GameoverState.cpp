@@ -2,10 +2,12 @@
 #include "GameStatescpp.cpp"
 #include <iostream>
 
-GameoverState::GameoverState(sf::RenderWindow& window, StateMachine& stateMachine)
+
+GameoverState::GameoverState(sf::RenderWindow& window, StateMachine& stateMachine, ScoreHandler& scoreHandler)
 {
 	_window = &window;
 	_stateMachine = &stateMachine;
+	_scoreHandler = &scoreHandler;
 }
 
 void GameoverState::Enter()
@@ -49,5 +51,6 @@ void GameoverState::Exit()
 	delete(_backgroundSprite);
 	delete(_backgroundShape);
 	delete(_playButton);
+	_scoreHandler->reset();
 	std::cout << "Exit game over" << std::endl;
 }

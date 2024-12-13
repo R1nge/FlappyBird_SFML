@@ -21,6 +21,11 @@ int ScoreHandler::getHighScore()
 	return _highScore;
 }
 
+void ScoreHandler::reset()
+{
+	_score = 0;
+}
+
 std::istream& operator>>(std::istream& in, ScoreHandler& obj)
 {
 	in >> obj._highScore;

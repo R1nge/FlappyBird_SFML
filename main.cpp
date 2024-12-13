@@ -31,7 +31,7 @@ int main()
 	state_machine.AddState(&_menuState, game_states::Menu);
 	GameplayState _gamePlayState = GameplayState(window, scoreHandler, randomizer, state_machine);
 	state_machine.AddState(&_gamePlayState, game_states::Gameplay);
-	GameoverState _gameoverState = GameoverState(window, state_machine);
+	GameoverState _gameoverState = GameoverState(window, state_machine, scoreHandler);
 	state_machine.AddState(&_gameoverState, game_states::Gameover);
 
   	state_machine.SwitchState(game_states::Menu);

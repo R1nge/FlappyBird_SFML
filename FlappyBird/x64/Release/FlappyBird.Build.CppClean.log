@@ -6,6 +6,7 @@ c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\scorehandler.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\playerinput.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\player.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\pipe.obj
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\main.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\rectanglecollider.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\randomizer.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\pipeentity.obj
@@ -14,6 +15,16 @@ c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\gamestatescpp.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\gameplaystate.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\circlecollider.obj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\button.obj
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\gameoverstate.obj
+c:\users\r1nge\source\repos\flappybird\x64\release\flappybird.exe
+c:\users\r1nge\source\repos\flappybird\x64\release\flappybird.pdb
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.ipdb
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.iobj
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\cl.command.1.tlog
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\cl.items.tlog
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\cl.read.1.tlog
 c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\cl.write.1.tlog
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\link.command.1.tlog
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\link.read.1.tlog
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\link.secondary.1.tlog
+c:\users\r1nge\source\repos\flappybird\flappybird\x64\release\flappybird.tlog\link.write.1.tlog
