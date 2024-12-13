@@ -34,5 +34,6 @@ private:
     sf::Texture* _backgroundSprite;
     sf::RectangleShape* _backgroundShape;
     StateMachine* _stateMachine;
+    bool _drawColliders;
 };
 

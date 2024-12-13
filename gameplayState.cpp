@@ -72,8 +72,8 @@ void GameplayState::Update() {
 
 		if (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 
-			//_drawColliders = !_drawColliders;
-			//std::cout << "Collider debug is " << _drawColliders << std::endl;
+			_drawColliders = !_drawColliders;
+			std::cout << "Collider debug is " << _drawColliders << std::endl;
 		}
 	}
 	
@@ -83,9 +83,18 @@ void GameplayState::Update() {
 
 	_window->draw(*_backgroundShape);
 
-	_player->draw();
-	_topPipe->draw(*_pipeTransformable);
-	_bottomPipe->draw(*_pipeTransformable);
+	if (_drawColliders) 
+	{
+		_player->collider.draw();
+		_topPipe->collider.draw();
+		_bottomPipe->collider.draw();
+	}
+	else 
+	{
+		_player->draw();
+		_topPipe->draw(*_pipeTransformable);
+		_bottomPipe->draw(*_pipeTransformable);
+	}
 
 	_scoreText.setString(std::to_string(_scoreHandler->getScore()));
 
@@ -110,6 +119,7 @@ void GameplayState::Exit() {
 	delete(_topPipe);
 	delete(_backgroundSprite);
 	delete(_backgroundShape);
+	_drawColliders = false;
 
 	std::ofstream outFile("score.txt");
 	outFile << _scoreHandler->getHighScore();
