@@ -1,8 +1,8 @@
-﻿  Button.cpp
-C:\Users\R1nge\source\repos\FlappyBird\Button.cpp(37,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿  Text.cpp
+C:\Users\R1nge\source\repos\FlappyBird\Text.cpp(24,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Generating code
-  2 of 350 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  0 of 350 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    35 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FlappyBird.vcxproj -> C:\Users\R1nge\source\repos\FlappyBird\x64\Release\FlappyBird.exe
