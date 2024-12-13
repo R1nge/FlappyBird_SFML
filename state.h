@@ -5,7 +5,5 @@ public:
 	virtual void Enter();
 	virtual void Update();
 	virtual void Exit();
-protected:
-	bool _entering = true;
-	bool _exiting;
+	virtual void Reset();
 };

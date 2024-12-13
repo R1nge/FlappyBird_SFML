@@ -15,14 +15,15 @@ void MenuState::Enter()
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite);
 	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100), "Play");
-	_entering = false;
 }
 
 void MenuState::Update() {
-	if (_entering || _exiting)
-	{
-		return;
-	}
+	_window->clear();
+
+	_window->draw(*_backgroundShape);
+	_playButton->draw(*_window);
+
+	_window->display();
 
 	sf::Event event;
 	while (_window->pollEvent(event))
@@ -42,22 +43,9 @@ void MenuState::Update() {
 			}
 		}
 	}
-
-	if (_entering || _exiting)
-	{
-		return;
-	}
-
-	_window->clear();
-
-	_window->draw(*_backgroundShape);
-	_playButton->draw(*_window);
-
-	_window->display();
 }
 
 void MenuState::Exit() {
-	_exiting = true;
 	delete(_backgroundSprite);
 	delete(_backgroundShape);
 	delete(_playButton);

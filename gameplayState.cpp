@@ -52,16 +52,9 @@ void GameplayState::Enter()
 		_scoreText.setFillColor(sf::Color::White);
 		_scoreText.setPosition(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 8));
 	}
-
-	_entering = false;
 }
 
 void GameplayState::Update() {
-	if (_entering || _exiting)
-	{
-		return;
-	}
-
 	_playerInput->update();
 
 	std::cout << _playerInput->getPlayerInput().y << std::endl;
@@ -86,15 +79,6 @@ void GameplayState::Update() {
 	
 	_pipeEntity->move(sf::Vector2f(-1, 0), *_scoreHandler);
 
-	if (_player->collider.checkCollision(_topPipe->collider.Bbox) || _player->collider.checkCollision(_bottomPipe->collider.Bbox)) {
-		_stateMachine->SwitchState(game_states::Gameover);
-	}
-
-	if (_entering || _exiting)
-	{
-		return;
-	}
-
 	_window->clear();
 
 	_window->draw(*_backgroundShape);
@@ -108,10 +92,14 @@ void GameplayState::Update() {
 	_window->draw(_scoreText);
 
 	_window->display();
+
+
+	if (_player->collider.checkCollision(_topPipe->collider.Bbox) || _player->collider.checkCollision(_bottomPipe->collider.Bbox)) {
+		_stateMachine->SwitchState(game_states::Gameover);
+	}
 }
 
 void GameplayState::Exit() {
-	_exiting = true;
 	delete(_playerInput);
 	delete(_player);
 	delete(_playerSprite);

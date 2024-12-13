@@ -15,3 +15,7 @@ void State::Exit()
 {
 	std::cout << "Base state exit" << std::endl;
 }
+
+void State::Reset() {
+	std::cout << "Base state reset" << std::endl;
+}

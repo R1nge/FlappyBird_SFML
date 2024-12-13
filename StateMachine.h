@@ -14,5 +14,6 @@ public:
 private:
 	std::map<game_states, State*> _states;
 	State* _currentState;
+	bool _canUpdate = true;
 };
 
