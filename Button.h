@@ -6,6 +6,7 @@ class Button
 {
 public:
 	Button(sf::Vector2f center, sf::Vector2f size, std::string text);
+	~Button();
 	bool isPressed(sf::Vector2f mousePosition);
 	void draw(sf::RenderWindow& renderWindow);
 	void setText(std::string text);

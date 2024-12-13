@@ -38,6 +38,12 @@ Button::Button(sf::Vector2f center, sf::Vector2f size, std::string text)
 	}
 }
 
+Button::~Button()
+{
+	delete(_font);
+	delete(_text);
+}
+
 bool Button::isPressed(sf::Vector2f mousePosition) {
 	return _rect.getGlobalBounds().contains(mousePosition);
 }

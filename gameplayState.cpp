@@ -108,6 +108,8 @@ void GameplayState::Exit() {
 	delete(_pipeTransformable);
 	delete(_bottomPipe);
 	delete(_topPipe);
+	delete(_backgroundSprite);
+	delete(_backgroundShape);
 
 	std::ofstream outFile("score.txt");
 	outFile << _scoreHandler->getHighScore();
