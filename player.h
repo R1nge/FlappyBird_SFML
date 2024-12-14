@@ -7,9 +7,11 @@ class Player
 public:
 	Player(sf::RenderWindow* window, float raduis, sf::Texture& texture);
 	void move(sf::Vector2f direction);
+	void rotate(int degree);
 	void draw();
 	CircleCollider collider;
 	sf::CircleShape shape;
+	sf::CircleShape colliderShape;
 private:
 	sf::RenderWindow* _window;
 	sf::Color _originalColor;

@@ -23,6 +23,7 @@ void GameplayState::Enter()
 	_playerSprite->loadFromImage(playerImage);
 
 	_player = new Player(_window, 50, *_playerSprite);
+	_player->move(sf::Vector2f(20, 0));
 	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
 	_pipeSprite = new sf::Texture();
@@ -59,6 +60,7 @@ void GameplayState::Update() {
 	_playerInput->update();
 
 	_player->move(_playerInput->getPlayerInput());
+	_player->rotate(1);
 	_player->collider.Update();
 
 	sf::Event event;
