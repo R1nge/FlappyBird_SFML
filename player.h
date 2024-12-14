@@ -16,4 +16,5 @@ private:
 	sf::RenderWindow* _window;
 	sf::Color _originalColor;
 	float _speed;
+	int _lastInput;
 };

@@ -18,13 +18,36 @@ Player::Player(sf::RenderWindow* window, float radius, sf::Texture& texture) {
 
 void Player::move(sf::Vector2f direction)
 {
+	_lastInput = direction.y;
 	shape.move(direction * _speed);
 	colliderShape.move(direction * _speed);
+	rotate(1);
 }
 
 void Player::rotate(int degree) 
 {
-	shape.rotate(degree);
+	std::cout << _lastInput << std::endl;
+
+	//Falling
+	if (_lastInput == 1) {
+
+		if (std::fmodf(shape.getRotation(), 360) < 35) {
+			shape.rotate(degree);
+		}
+		else {
+			shape.rotate(-degree);
+		}
+	}
+	//UP JUMP
+	else if (_lastInput == -1) {
+		if (std::fmodf(shape.getRotation(), 360 - 35) < 35) {
+			shape.rotate(-degree * 2);
+		}
+
+		else {
+			shape.rotate(degree);
+		}
+	}
 }
 
 void Player::draw()

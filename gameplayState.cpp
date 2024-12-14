@@ -60,7 +60,6 @@ void GameplayState::Update() {
 	_playerInput->update();
 
 	_player->move(_playerInput->getPlayerInput());
-	_player->rotate(1);
 	_player->collider.Update();
 
 	sf::Event event;
