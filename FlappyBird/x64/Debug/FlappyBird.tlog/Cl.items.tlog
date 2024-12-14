@@ -1,6 +1,17 @@
+C:\Users\R1nge\source\repos\FlappyBird\Button.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\Button.obj
 C:\Users\R1nge\source\repos\FlappyBird\circleCollider.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\circleCollider.obj
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\GameoverState.obj
+C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\gameplayState.obj
+C:\Users\R1nge\source\repos\FlappyBird\GameStatescpp.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\GameStatescpp.obj
+C:\Users\R1nge\source\repos\FlappyBird\MenuState.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\MenuState.obj
+C:\Users\R1nge\source\repos\FlappyBird\pipeEntity.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\pipeEntity.obj
+C:\Users\R1nge\source\repos\FlappyBird\Randomizer.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\Randomizer.obj
 C:\Users\R1nge\source\repos\FlappyBird\rectangleCollider.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\rectangleCollider.obj
 C:\Users\R1nge\source\repos\FlappyBird\main.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\main.obj
 C:\Users\R1nge\source\repos\FlappyBird\pipe.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\pipe.obj
 C:\Users\R1nge\source\repos\FlappyBird\player.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\player.obj
 C:\Users\R1nge\source\repos\FlappyBird\playerInput.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\playerInput.obj
+C:\Users\R1nge\source\repos\FlappyBird\scoreHandler.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\scoreHandler.obj
+C:\Users\R1nge\source\repos\FlappyBird\state.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\state.obj
+C:\Users\R1nge\source\repos\FlappyBird\StateMachine.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\StateMachine.obj
+C:\Users\R1nge\source\repos\FlappyBird\Text.cpp;C:\Users\R1nge\source\repos\FlappyBird\FlappyBird\x64\Debug\Text.obj
