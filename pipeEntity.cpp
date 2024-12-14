@@ -12,7 +12,7 @@ PipeEntity::PipeEntity(Pipe& pipeTop, Pipe& pipeBottom, sf::Transformable& trans
 
 void PipeEntity::move(sf::Vector2f direction, ScoreHandler& scoreHandler)
 {
-	if (_transform.getPosition().x <= 0) {
+	if (_transform.getPosition().x <= -50) {
 		int posY = _randomizer.GetRandomNumber();
 		_transform.setPosition(sf::Vector2f(800, posY));
 		scoreHandler.addScore(1);

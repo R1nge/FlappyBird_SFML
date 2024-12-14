@@ -38,6 +38,7 @@ void GameplayState::Enter()
 	_bottomPipe->shape.setOrigin(sf::Vector2f(_bottomPipe->shape.getSize().x / 2, _bottomPipe->shape.getSize().y / 2));
 
 	_pipeTransformable = new sf::Transformable();
+	_pipeTransformable->setPosition(600, 0);
 	_pipeEntity = new PipeEntity(*_topPipe, *_bottomPipe, *_pipeTransformable, *_randomizer);
 
 	_backgroundSprite = new sf::Texture();
