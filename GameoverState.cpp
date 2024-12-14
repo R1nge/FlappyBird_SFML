@@ -12,11 +12,11 @@ GameoverState::GameoverState(sf::RenderWindow& window, StateMachine& stateMachin
 
 void GameoverState::Enter()
 {
-	_backgroundSprite = new sf::Texture();
+	_backgroundSprite = std::make_unique<sf::Texture>();;
 	_backgroundSprite->loadFromFile("Background.png");
-	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
-	_backgroundShape->setTexture(_backgroundSprite);
-	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200, 100), "Retry");
+	_backgroundShape = std::make_unique<sf::RectangleShape>(sf::Vector2f(_window->getSize().x, _window->getSize().y));
+	_backgroundShape->setTexture(_backgroundSprite.get());
+	_playButton = std::make_unique<Button>(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200, 100), "Retry");
 
 	//TODO: new font with chars
 	if (_font.loadFromFile("Carre.ttf"))
@@ -60,9 +60,9 @@ void GameoverState::Update()
 
 void GameoverState::Exit() 
 {
-	delete(_backgroundSprite);
-	delete(_backgroundShape);
-	delete(_playButton);
+	_backgroundSprite.reset();
+	_backgroundShape.reset();
+	_playButton.reset();
 	_scoreHandler->reset();
 	std::cout << "Exit game over" << std::endl;
 }
