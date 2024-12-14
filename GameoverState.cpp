@@ -18,6 +18,7 @@ void GameoverState::Enter()
 	_backgroundShape->setTexture(_backgroundSprite);
 	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200, 100), "Retry");
 
+	//TODO: new font with chars
 	if (_font.loadFromFile("Carre.ttf"))
 	{
 		_scoreText.setFont(_font);

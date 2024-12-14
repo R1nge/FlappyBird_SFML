@@ -9,11 +9,12 @@ Player::Player(sf::RenderWindow* window, float radius, sf::Texture& texture) {
 	_originalColor = shape.getFillColor();
 	//shape.setOrigin(sf::Vector2f(radius / 2, radius / 2));
 	collider = CircleCollider::CircleCollider(shape, *window);
+	_speed = 3.5f;
 }
 
 void Player::move(sf::Vector2f direction)
 {
-	shape.move(direction);
+	shape.move(direction * _speed);
 }
 
 void Player::draw()

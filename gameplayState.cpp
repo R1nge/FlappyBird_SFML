@@ -58,8 +58,6 @@ void GameplayState::Enter()
 void GameplayState::Update() {
 	_playerInput->update();
 
-	std::cout << _playerInput->getPlayerInput().y << std::endl;
-
 	_player->move(_playerInput->getPlayerInput());
 	_player->collider.Update();
 
