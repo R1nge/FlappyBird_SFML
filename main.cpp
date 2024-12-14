@@ -24,7 +24,7 @@ int main()
 	std::ifstream inFile("score.txt");
 	inFile >> scoreHandler;
 	inFile.close();
-	std::cout << scoreHandler.getScore();
+	std::cout << std::endl << "High score: " << scoreHandler.getHighScore() << std::endl;
 
 	StateMachine state_machine = StateMachine();
 	MenuState _menuState = MenuState(window, state_machine);

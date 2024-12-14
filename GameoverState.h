@@ -21,5 +21,7 @@ private:
 	sf::RectangleShape* _backgroundShape;
 	Button* _playButton;
 	ScoreHandler* _scoreHandler;
+	sf::Text _scoreText;
+	sf::Font _font;
 };
 

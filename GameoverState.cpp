@@ -17,6 +17,16 @@ void GameoverState::Enter()
 	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite);
 	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200, 100), "Retry");
+
+	if (_font.loadFromFile("Carre.ttf"))
+	{
+		_scoreText.setFont(_font);
+		_scoreText.setCharacterSize(24);
+		_scoreText.setFillColor(sf::Color::White);
+		_scoreText.setPosition(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 8));
+	}
+
+	_scoreText.setString(std::to_string(_scoreHandler->getHighScore()));
 }
 
 void GameoverState::Update() 
@@ -25,6 +35,7 @@ void GameoverState::Update()
 
 	_window->draw(*_backgroundShape);
 	_playButton->draw(*_window);
+	_window->draw(_scoreText);
 
 	_window->display();
 

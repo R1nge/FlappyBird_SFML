@@ -1,50 +1,72 @@
-﻿  gameplayState.cpp
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(31,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(32,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(34,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(34,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(37,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(37,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,97): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(46,75): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,86): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         with
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:             T=unsigned int
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         ]
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         and
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         [
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:             T=float
-C:\Users\R1nge\source\repos\FlappyBird\gameplayState.cpp(54,60): warning C4244:         ]
+﻿  GameoverState.cpp
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,97): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(17,75): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,87): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(19,61): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,86): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:             T=unsigned int
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         and
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(26,60): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,83): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,83): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,83): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,83): warning C4244:         ]
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,62): warning C4244:         with
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,62): warning C4244:         [
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,62): warning C4244:             T=float
+C:\Users\R1nge\source\repos\FlappyBird\GameoverState.cpp(52,62): warning C4244:         ]
   Generating code
-  1 of 362 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  1 of 363 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    9 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
 Randomizer.obj : warning LNK4099: PDB '' was not found with 'Randomizer.obj' or at ''; linking object as if no debug info
 state.obj : warning LNK4099: PDB '' was not found with 'state.obj' or at ''; linking object as if no debug info
