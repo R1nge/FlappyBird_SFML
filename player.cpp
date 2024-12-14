@@ -28,25 +28,26 @@ void Player::rotate(int degree)
 {
 	std::cout << _lastInput << std::endl;
 
-	//Falling
+	// Falling
 	if (_lastInput == 1) {
-
-		if (std::fmodf(shape.getRotation(), 360) < 35) {
+		if (shape.getRotation() < 50 || shape.getRotation() >= 310) {
 			shape.rotate(degree);
-		}
-		else {
-			shape.rotate(-degree);
 		}
 	}
-	//UP JUMP
+	// UP JUMP
 	else if (_lastInput == -1) {
-		if (std::fmodf(shape.getRotation(), 360 - 35) < 35) {
+		if (shape.getRotation() >= 310 || shape.getRotation() <= 50) {
 			shape.rotate(-degree * 2);
 		}
+	}
 
-		else {
-			shape.rotate(degree);
-		}
+	if (shape.getRotation() > 50 && shape.getRotation() < 180) 
+	{
+		shape.setRotation(50);
+	} 
+	else if (shape.getRotation() < 310 && shape.getRotation() > 180) 
+	{
+		shape.setRotation(310);
 	}
 }
 
