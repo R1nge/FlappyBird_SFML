@@ -26,8 +26,12 @@ void GameplayState::Enter()
 	_player->move(sf::Vector2f(20, 0));
 	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
 
+	sf::Image pipeImage;
+	pipeImage.loadFromFile("Pipe.png");
+	pipeImage.createMaskFromColor(sf::Color::White);
+
 	_pipeSprite = new sf::Texture();
-	_pipeSprite->loadFromFile("Pipe.png");
+	_pipeSprite->loadFromImage(pipeImage);
 
 	int height = _window->getSize().y * .75f;
 	int width = height * 0.1f;
