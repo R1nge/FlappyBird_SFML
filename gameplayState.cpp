@@ -19,37 +19,37 @@ void GameplayState::Enter()
 	playerImage.loadFromFile("Bird2.png");
 	playerImage.createMaskFromColor(sf::Color::Green);
 
-	_playerSprite = new sf::Texture();
+	_playerSprite = std::make_unique<sf::Texture>();
 	_playerSprite->loadFromImage(playerImage);
 
-	_player = new Player(_window, 50, *_playerSprite);
+	_player = std::make_unique<Player>(_window, 50, *_playerSprite);
 	_player->move(sf::Vector2f(20, 0));
-	_playerInput = new PlayerInput(sf::Vector2f(0, 1), 250);
+	_playerInput = std::make_unique<PlayerInput>(sf::Vector2f(0, 1), 250);
 
 	sf::Image pipeImage;
 	pipeImage.loadFromFile("Pipe.png");
 	pipeImage.createMaskFromColor(sf::Color::White);
 
-	_pipeSprite = new sf::Texture();
+	_pipeSprite = std::make_unique<sf::Texture>();
 	_pipeSprite->loadFromImage(pipeImage);
 
 	int height = _window->getSize().y * .75f;
 	int width = height * 0.1f;
 
-	_topPipe = new Pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));
+	_topPipe = std::make_unique<Pipe>(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));
 	_topPipe->shape.setOrigin(sf::Vector2f(_topPipe->shape.getSize().x / 2, _topPipe->shape.getSize().y / 2));
 	_topPipe->shape.rotate(180);
-	_bottomPipe = new Pipe(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 800));
+	_bottomPipe = std::make_unique<Pipe>(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 800));
 	_bottomPipe->shape.setOrigin(sf::Vector2f(_bottomPipe->shape.getSize().x / 2, _bottomPipe->shape.getSize().y / 2));
 
-	_pipeTransformable = new sf::Transformable();
+	_pipeTransformable = std::make_unique<sf::Transformable>();
 	_pipeTransformable->setPosition(600, 0);
-	_pipeEntity = new PipeEntity(*_topPipe, *_bottomPipe, *_pipeTransformable, *_randomizer);
+	_pipeEntity = std::make_unique<PipeEntity>(*_topPipe, *_bottomPipe, *_pipeTransformable, *_randomizer);
 
-	_backgroundSprite = new sf::Texture();
+	_backgroundSprite = std::make_unique<sf::Texture>();
 	_backgroundSprite->loadFromFile("Background.png");
-	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
-	_backgroundShape->setTexture(_backgroundSprite);
+	_backgroundShape = std::make_unique<sf::RectangleShape>(sf::Vector2f(_window->getSize().x, _window->getSize().y));
+	_backgroundShape->setTexture(_backgroundSprite.get());
 
 	if (_font.loadFromFile("Carre.ttf"))
 	{
@@ -113,16 +113,16 @@ void GameplayState::Update() {
 }
 
 void GameplayState::Exit() {
-	delete(_playerInput);
-	delete(_player);
-	delete(_playerSprite);
-	delete(_pipeSprite);
-	delete(_pipeEntity);
-	delete(_pipeTransformable);
-	delete(_bottomPipe);
-	delete(_topPipe);
-	delete(_backgroundSprite);
-	delete(_backgroundShape);
+	_playerInput.reset();
+	_player.reset();
+	_playerSprite.reset();
+	_pipeSprite.reset();
+	_pipeEntity.reset();
+	_pipeTransformable.reset();
+	_bottomPipe.reset();
+	_topPipe.reset();
+	_backgroundSprite.reset();
+	_backgroundShape.reset();
 	_drawColliders = false;
 
 	std::ofstream outFile("score.txt");

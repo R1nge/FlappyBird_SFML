@@ -14,7 +14,8 @@ int main()
 	//Sounds
 
 	sf::RenderWindow window(sf::VideoMode(600, 800), "Flappy Bird");
-	window.setFramerateLimit(60);
+	window.setVerticalSyncEnabled(true);
+	//window.setFramerateLimit(60);
 	window.setKeyRepeatEnabled(false);
 
 	ScoreHandler scoreHandler = ScoreHandler();

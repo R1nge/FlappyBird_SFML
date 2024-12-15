@@ -14,8 +14,8 @@ public:
 private:
 	StateMachine* _stateMachine;
 	sf::RenderWindow* _window;
-	sf::Texture* _backgroundSprite;
-	sf::RectangleShape* _backgroundShape;
-	Button* _playButton;
+	std::unique_ptr<sf::Texture> _backgroundSprite;
+	std::unique_ptr<sf::RectangleShape> _backgroundShape;
+	std::unique_ptr<Button> _playButton;
 };
 

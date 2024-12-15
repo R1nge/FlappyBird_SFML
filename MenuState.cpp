@@ -10,11 +10,11 @@ MenuState::MenuState(sf::RenderWindow& window, StateMachine& stateMachine)
 
 void MenuState::Enter()
 {
-	_backgroundSprite = new sf::Texture();
+	_backgroundSprite = std::make_unique<sf::Texture>();
 	_backgroundSprite->loadFromFile("Background.png");
-	_backgroundShape = new sf::RectangleShape(sf::Vector2f(_window->getSize().x, _window->getSize().y));
-	_backgroundShape->setTexture(_backgroundSprite);
-	_playButton = new Button(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100), "Play");
+	_backgroundShape = std::make_unique<sf::RectangleShape>(sf::Vector2f(_window->getSize().x, _window->getSize().y));
+	_backgroundShape->setTexture(_backgroundSprite.get());
+	_playButton = std::make_unique<Button>(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100), "Play");
 }
 
 void MenuState::Update() {
@@ -46,7 +46,7 @@ void MenuState::Update() {
 }
 
 void MenuState::Exit() {
-	delete(_backgroundSprite);
-	delete(_backgroundShape);
-	delete(_playButton);
+	_backgroundSprite.reset();
+	_backgroundShape.reset();
+	_playButton.reset();
 }
