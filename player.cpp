@@ -21,33 +21,39 @@ void Player::move(sf::Vector2f direction)
 	_lastInput = direction.y;
 	shape.move(direction * _speed);
 	colliderShape.move(direction * _speed);
-	rotate(1);
+	rotate(5);
 }
 
 void Player::rotate(int degree) 
 {
 	std::cout << _lastInput << std::endl;
+	int minDegree = 30;
+	int maxDegree = 330;
 
 	// Falling
-	if (_lastInput == 1) {
-		if (shape.getRotation() < 50 || shape.getRotation() >= 310) {
+	if (_lastInput == 1) 
+	{
+		if (shape.getRotation() < minDegree || shape.getRotation() >= maxDegree) 
+		{
 			shape.rotate(degree);
 		}
 	}
 	// UP JUMP
-	else if (_lastInput == -1) {
-		if (shape.getRotation() >= 310 || shape.getRotation() <= 50) {
-			shape.rotate(-degree * 2);
+	else if (_lastInput == -1) 
+	{
+		if (shape.getRotation() >= maxDegree || shape.getRotation() <= minDegree) 
+		{
+			shape.rotate(-degree);
 		}
 	}
 
-	if (shape.getRotation() > 50 && shape.getRotation() < 180) 
+	if (shape.getRotation() > minDegree && shape.getRotation() < 180) 
 	{
-		shape.setRotation(50);
+		shape.setRotation(minDegree);
 	} 
-	else if (shape.getRotation() < 310 && shape.getRotation() > 180) 
+	else if (shape.getRotation() < maxDegree && shape.getRotation() > 180) 
 	{
-		shape.setRotation(310);
+		shape.setRotation(maxDegree);
 	}
 }
 
