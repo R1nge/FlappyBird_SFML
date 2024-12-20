@@ -33,7 +33,7 @@ void GameplayState::Enter()
 	_pipeSprite = std::make_unique<sf::Texture>();
 	_pipeSprite->loadFromImage(pipeImage);
 
-	int height = _window->getSize().y * .75f;
+	int height = (_window->getSize().y / _window->getSize().x) * 600;
 	int width = height * 0.1f;
 
 	_topPipe = std::make_unique<Pipe>(_window, width, height, *_pipeSprite, sf::Vector2f(-600, 0));

@@ -2,9 +2,8 @@
 #include <iostream>
 
 
-Button::Button(sf::Vector2f center, sf::Vector2f size, std::string text)
+Button::Button(std::string textureName, sf::Vector2f center, sf::Vector2f size, std::string text)
 {
-	_rect.setFillColor(sf::Color::Black);
 	sf::Vector2f adjustedCenter = center - sf::Vector2f(size.x / 2, size.y / 2);
 	_rect.setPosition(adjustedCenter);
 	_rect.setSize(size);
@@ -36,6 +35,10 @@ Button::Button(sf::Vector2f center, sf::Vector2f size, std::string text)
 		_text->setOrigin(bounds.width / 2, maxHeight / 2);
 		_text->setPosition(size.x / 2, (size.y / 2) - maxHeight * 1.5);
 	}
+
+	_texture = std::make_unique<sf::Texture>();
+	_texture->loadFromFile(textureName);
+	_rect.setTexture(_texture.get());
 }
 
 Button::~Button()

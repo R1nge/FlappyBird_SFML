@@ -5,13 +5,14 @@
 class Button
 {
 public:
-	Button(sf::Vector2f center, sf::Vector2f size, std::string text);
+	Button(std::string textureName, sf::Vector2f center, sf::Vector2f size, std::string text);
 	~Button();
 	bool isPressed(sf::Vector2f mousePosition);
 	void draw(sf::RenderWindow& renderWindow);
 	void setText(std::string text);
 private:
 	sf::RectangleShape _rect;
+	std::unique_ptr<sf::Texture> _texture;
 	sf::Text* _text;
 	sf::Font* _font;
 };

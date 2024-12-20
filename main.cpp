@@ -41,6 +41,6 @@ int main()
 	{
 		state_machine.Update();
 	}
-	
+
 	return 0;
 }

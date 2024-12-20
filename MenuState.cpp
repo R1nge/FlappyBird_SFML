@@ -14,7 +14,7 @@ void MenuState::Enter()
 	_backgroundSprite->loadFromFile("Background.png");
 	_backgroundShape = std::make_unique<sf::RectangleShape>(sf::Vector2f(_window->getSize().x, _window->getSize().y));
 	_backgroundShape->setTexture(_backgroundSprite.get());
-	_playButton = std::make_unique<Button>(sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200,100), "Play");
+	_playButton = std::make_unique<Button>("PlayButton.png",sf::Vector2f(_window->getSize().x / 2, _window->getSize().y / 2), sf::Vector2f(200, 100), "");
 }
 
 void MenuState::Update() {
